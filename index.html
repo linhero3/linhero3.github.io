@@ -270,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/04/27/2018-4-27/">
+    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/04/27/2018-4-27 Linux/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="我在山顶刮大风">
@@ -289,7 +289,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/27/2018-4-27/" itemprop="url">Linux 简记</a></h1>
+                <a class="post-title-link" href="/2018/04/27/2018-4-27 Linux/" itemprop="url">Linux 简记</a></h1>
         
 
         <div class="post-meta">
@@ -343,8 +343,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/27/2018-4-27/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2018/04/27/2018-4-27/" itemprop="commentsCount"></span>
+                <a href="/2018/04/27/2018-4-27 Linux/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/04/27/2018-4-27 Linux/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -374,8 +374,7 @@
 
       
         
-          
-            <h2 id="1-Linux-安装"><a href="#1-Linux-安装" class="headerlink" title="1. Linux 安装"></a>1. Linux 安装</h2><h4 id="Linux-vs-Windows"><a href="#Linux-vs-Windows" class="headerlink" title="Linux vs Windows"></a>Linux vs Windows</h4><ul>
+          <h2 id="1-Linux-安装"><a href="#1-Linux-安装" class="headerlink" title="1. Linux 安装"></a>1. Linux 安装</h2><h4 id="Linux-vs-Windows"><a href="#Linux-vs-Windows" class="headerlink" title="Linux vs Windows"></a>Linux vs Windows</h4><ul>
 <li>Linux严格区分大小写</li>
 <li>Linux中所有的内容都是文件，包括硬件</li>
 <li>Linux不靠扩展名区分文件类型<br><em>以下扩展名约定俗成，便于阅读</em><blockquote>
@@ -383,55 +382,13 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="Linux安装"><a href="#Linux安装" class="headerlink" title="Linux安装"></a>Linux安装</h4><ul>
-<li>Linux OS: <a href="https://www.centos.org/" target="_blank" rel="noopener">CentOS7</a></li>
-<li>虚拟机:<br><a href="https://www.virtualbox.org/" target="_blank" rel="noopener">Virtual Box</a><br><a href="http://www.vmware.com" target="_blank" rel="noopener">VMware Workstation</a><ul>
-<li><a href="https://download3.vmware.com/software/wkst/file/VMware-workstation-full-14.0.0-6661328.exe" target="_blank" rel="noopener">VMware Workstation Pro v14.0 download</a></li>
-<li><em>VMware Workstation Pro v14密钥</em>：<code>FF31K-AHZD1-H8ETZ-8WWEZ-WUUVA</code></li>
-</ul>
-</li>
-</ul>
-<h4 id="linux硬盘分区"><a href="#linux硬盘分区" class="headerlink" title="linux硬盘分区"></a>linux硬盘分区</h4><ul>
-<li><strong>分区</strong><br>主分区最多4个,可包含一个扩展分区；扩展分区只能包含逻辑分区。<br>必须分区：根分区，swap分区</li>
-<li><strong>格式化</strong>：给分区写入文件系统(EXT4/NTFS…)</li>
-<li><strong>挂载</strong>：给每个分区分配挂载点(win的盘符)（/ , swap, /boot）<blockquote>
-<p>根分区<code>必须</code>： /<br>swap分区<code>必须</code>： swap(交换分区/虚拟内存，内存2倍)<br>引导分区<code>推荐</code>： /boot(启动分区）</p>
-</blockquote>
-</li>
-<li><strong>硬件设备文件名</strong><br>IDE硬盘: <code>/dev/hd[a-p]</code><br>SCSI/SATA/USB硬盘: <code>/dev/sd[a-p]</code>  <blockquote>
-<p>/dev/sd<code>a1</code>: 第一块SATA硬盘的第一个主分区;<br>/dev/sd<code>b5</code>: 第二块SATA硬盘的第一个逻辑分区<br> 用<code>a/b/c</code>字母标识硬盘，用数字标识分区(<code>主分区</code>:1-4 ; <code>逻辑分区</code>:5开始 )</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="延伸"><a href="#延伸" class="headerlink" title="延伸"></a>延伸</h4><ul>
-<li>setup 配置虚拟机网络</li>
-<li>xshell 远程登陆</li>
-</ul>
-<h2 id="2-Linux常用命令"><a href="#2-Linux常用命令" class="headerlink" title="2. Linux常用命令"></a>2. Linux常用命令</h2><ul>
-<li><p><strong>命令基本格式</strong><br><code>命令</code>  <code>[选项]</code>  <code>[参数]</code><br>命令提示符：<code>[root@arya ~]#</code>  </p>
-<blockquote>
-<p><code>root</code>: 用户<br><code>arya</code>: 主机名<br><code>~</code>: 当前目录(家目录 <code>/root</code> or <code>/home/user_name</code>)<br><code>/#</code>: 超级用户提示;普通用户<code>$</code></p>
-</blockquote>
-<p>  文件信息命令：<strong>ls</strong> -l </p>
-<blockquote>
-<p><code>-a</code> 显示所有文件，包括隐藏文件<br><code>-l</code> 显示详细信息<br><code>-d</code> 查看目录属性<br><code>-h</code> 人性化显示文件大小(不以字节为单位)</p>
-</blockquote>
-<pre><code>[root@arya ~]# ls -l
-drwxrw-r-x root root 33333  4月 29 16:50  文件名
-</code></pre><p>  <code>drwxrw-r-x</code><br>  第一位: 文件类型（<code>-</code>文件 <code>d</code>目录 <code>|</code>软连接文件）<br>  2-10位: 文件权限(r读w写x执行 u所有者 g所属组 o其他人)</p>
-<p>  <code>root root 33333</code><br>  文件所有者 文件所属组  文件大小(字节)</p>
-</li>
-</ul>
-<ul>
-<li><strong>文件处理命令</strong></li>
-<li><strong>文件搜索命令</strong></li>
-<li><strong>帮助命令</strong></li>
-<li><strong>压缩解压缩命令</strong></li>
-<li><strong>关机/重启命令</strong></li>
-<li><strong>其他命令</strong></li>
-</ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/27/2018-4-27 Linux/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1503,7 +1460,7 @@ drwxrw-r-x root root 33333  4月 29 16:50  文件名
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

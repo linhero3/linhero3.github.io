@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="linux," />
+  <meta name="keywords" content="linux,温习," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1. Linux 安装Linux vs Windows Linux严格区分大小写 Linux中所有的内容都是文件，包括硬件 Linux不靠扩展名区分文件类型以下扩展名约定俗成，便于阅读 压缩包: .gz, .bz2, .tar.bz2, .tgz二进制软件包: .rpm网页文件: .html脚本文件: .sh配置文件: .conf    Linux安装 Linux OS: CentOS7 虚拟机:">
-<meta name="keywords" content="linux">
+<meta name="description" content="1. Linux 安装Linux vs Windows Linux严格区分大小写 Linux中所有的内容都是文件，包括硬件 Linux不靠扩展名区分文件类型以下扩展名约定俗成，便于阅读 压缩包: .gz, .bz2, .tar.bz2, .tgz二进制软件包: .rpm网页文件: .html脚本文件: .sh配置文件: .conf">
+<meta name="keywords" content="linux,温习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux 简记">
-<meta property="og:url" content="http://dengzhe.xyz/2018/04/27/2018-4-27/index.html">
+<meta property="og:url" content="http://dengzhe.xyz/2018/04/27/2018-4-27 Linux/index.html">
 <meta property="og:site_name" content="还没想好">
-<meta property="og:description" content="1. Linux 安装Linux vs Windows Linux严格区分大小写 Linux中所有的内容都是文件，包括硬件 Linux不靠扩展名区分文件类型以下扩展名约定俗成，便于阅读 压缩包: .gz, .bz2, .tar.bz2, .tgz二进制软件包: .rpm网页文件: .html脚本文件: .sh配置文件: .conf    Linux安装 Linux OS: CentOS7 虚拟机:">
+<meta property="og:description" content="1. Linux 安装Linux vs Windows Linux严格区分大小写 Linux中所有的内容都是文件，包括硬件 Linux不靠扩展名区分文件类型以下扩展名约定俗成，便于阅读 压缩包: .gz, .bz2, .tar.bz2, .tgz二进制软件包: .rpm网页文件: .html脚本文件: .sh配置文件: .conf">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-29T09:24:14.538Z">
+<meta property="og:updated_time" content="2018-05-01T15:30:53.590Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux 简记">
-<meta name="twitter:description" content="1. Linux 安装Linux vs Windows Linux严格区分大小写 Linux中所有的内容都是文件，包括硬件 Linux不靠扩展名区分文件类型以下扩展名约定俗成，便于阅读 压缩包: .gz, .bz2, .tar.bz2, .tgz二进制软件包: .rpm网页文件: .html脚本文件: .sh配置文件: .conf    Linux安装 Linux OS: CentOS7 虚拟机:">
+<meta name="twitter:description" content="1. Linux 安装Linux vs Windows Linux严格区分大小写 Linux中所有的内容都是文件，包括硬件 Linux不靠扩展名区分文件类型以下扩展名约定俗成，便于阅读 压缩包: .gz, .bz2, .tar.bz2, .tgz二进制软件包: .rpm网页文件: .html脚本文件: .sh配置文件: .conf">
 
 
 
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://dengzhe.xyz/2018/04/27/2018-4-27/"/>
+  <link rel="canonical" href="http://dengzhe.xyz/2018/04/27/2018-4-27 Linux/"/>
 
 
 
@@ -271,7 +271,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/04/27/2018-4-27/">
+    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/04/27/2018-4-27 Linux/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="我在山顶刮大风">
@@ -342,8 +342,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/27/2018-4-27/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2018/04/27/2018-4-27/" itemprop="commentsCount"></span>
+                <a href="/2018/04/27/2018-4-27 Linux/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/04/27/2018-4-27 Linux/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -380,6 +380,7 @@
 </blockquote>
 </li>
 </ul>
+<a id="more"></a>
 <h4 id="Linux安装"><a href="#Linux安装" class="headerlink" title="Linux安装"></a>Linux安装</h4><ul>
 <li>Linux OS: <a href="https://www.centos.org/" target="_blank" rel="noopener">CentOS7</a></li>
 <li>虚拟机:<br><a href="https://www.virtualbox.org/" target="_blank" rel="noopener">Virtual Box</a><br><a href="http://www.vmware.com" target="_blank" rel="noopener">VMware Workstation</a><ul>
@@ -407,21 +408,97 @@
 <h2 id="2-Linux常用命令"><a href="#2-Linux常用命令" class="headerlink" title="2. Linux常用命令"></a>2. Linux常用命令</h2><ul>
 <li><p><strong>命令基本格式</strong><br><code>命令</code>  <code>[选项]</code>  <code>[参数]</code><br>命令提示符：<code>[root@arya ~]#</code>  </p>
 <blockquote>
-<p><code>root</code>: 用户<br><code>arya</code>: 主机名<br><code>~</code>: 当前目录(家目录 <code>/root</code> or <code>/home/user_name</code>)<br><code>/#</code>: 超级用户提示;普通用户<code>$</code></p>
+<p><code>root</code>: 用户<br><code>arya</code>: 主机名<br><code>~</code>: 当前目录(家目录 <code>/root</code> or <code>/home/user_name</code>)<br><code>#</code>: 超级用户提示;普通用户<code>$</code></p>
 </blockquote>
 <p>  文件信息命令：<strong>ls</strong> -l </p>
 <blockquote>
-<p><code>-a</code> 显示所有文件，包括隐藏文件<br><code>-l</code> 显示详细信息<br><code>-d</code> 查看目录属性<br><code>-h</code> 人性化显示文件大小(不以字节为单位)</p>
+<p><code>-a</code> 显示所有文件，包括隐藏文件<br><code>-l</code> 显示详细信息<br><code>-d</code> 查看目录属性<br><code>-h</code> 人性化显示文件大小(不以字节为单位)<br><code>-i</code> 文件inode(每个文件的标识ID)</p>
 </blockquote>
 <pre><code>[root@arya ~]# ls -l
 drwxrw-r-x root root 33333  4月 29 16:50  文件名
-</code></pre><p>  <code>drwxrw-r-x</code><br>  第一位: 文件类型（<code>-</code>文件 <code>d</code>目录 <code>|</code>软连接文件）<br>  2-10位: 文件权限(r读w写x执行 u所有者 g所属组 o其他人)</p>
-<p>  <code>root root 33333</code><br>  文件所有者 文件所属组  文件大小(字节)</p>
+</code></pre><p>  <code>drwxrw-r-x</code> </p>
+<blockquote>
+<p>第1位: 文件类型（<code>-</code>文件 <code>d</code>目录 <code>|</code>软连接文件）<br>2-10位: 文件权限(<code>r</code>读<code>w</code>写<code>x</code>执行; 三组分别是: <code>u</code>所有者 <code>g</code>所属组 <code>o</code>其他人)<br><code>root root 33333</code>: 文件所有者 文件所属组  文件大小(字节)</p>
+</blockquote>
+</li>
+<li><p><strong>文件处理命令</strong></p>
 </li>
 </ul>
+<ol>
+<li><p>目录/文件<br> <strong>创建目录</strong> : <strong><code>mkdir -p [目录名]</code></strong>   <em>make directories</em><br> <code>-p</code>   递归创建 <code>mkdir -p father/son</code></p>
+<p> <strong>切换目录</strong> : <strong><code>cd</code></strong> <em>change directories</em><br> <code>tab</code>   目录补齐，提示</p>
+<p> <strong>删除目录</strong> : <strong><code>rm -rf 文件或目录</code></strong>   <em>remove</em><br> <code>-r</code>   删除目录<br> <code>-f</code>   强制(force)</p>
+<p> <strong>复制</strong> : <strong><code>cp</code></strong> <em>copy</em><br> <code>-r</code>   复制目录<br> <code>-p</code>   连带文件属性复制(时间、u/g/o … )<br> <code>-d</code>   若文件是链接，复制链接属性<br> <strong><code>-a</code></strong>   相当于<code>-pdr</code></p>
+<p> <strong>剪切/改名</strong> : <strong><code>mv</code></strong> <em>copy</em><br> 跟<code>cp</code>不同的是，<code>mv</code>源文件不再存在</p>
+</li>
+<li><p>链接<br> <strong>链接</strong> : <strong><code>ln -s [源文件] [目标文件]</code></strong>  <em>link</em><br> <code>-s</code>  创建软链接(类似快捷方式,与硬链接区别可查资料)</p>
+</li>
+</ol>
 <ul>
-<li><strong>文件处理命令</strong></li>
 <li><strong>文件搜索命令</strong></li>
+</ul>
+<ol>
+<li>搜索文件: <strong><code>locate [文件名]</code></strong><br> 在<code>locate</code> <code>db</code>(<code>/var/lib/mlocate</code>)数据库中搜索，不用全盘扫描，速度块。<br> 命令<code>updatedb</code> : 强制更新locate数据库(默认一天一更新)<br> locate配置文件 : <code>/etc/updatedb.conf</code></li>
+<li><p>搜索命令: <strong><code>whereis [命令名]</code></strong>  <strong><code>which [命令名]</code></strong></p>
+<pre><code>[root@arya mlocate]# whereis ls
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz /usr/share/man/man1p/ls.1p.gz
+[root@arya mlocate]# which ls
+alias ls=&apos;ls --color=auto&apos;
+/usr/bin/ls
+</code></pre><p> <em><code>whoami</code> <code>whatis</code> …</em></p>
+<p> <code>PATH</code>环境变量: 系统命令路径(类似windows的path)</p>
+<pre><code>[root@arya mlocate]# echo $PATH
+/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/mrd/.local/bin:/home/mrd/bin
+[root@arya mlocate]# 
+</code></pre></li>
+<li><p><strong><code>find</code></strong><br><strong><code>find</code> <code>[搜索范围]</code> <code>[搜索条件]</code></strong></p>
+<p> 3.1 <code>-name</code>   按名称搜索<br> 3.2 <code>-iname</code>  不区分大小写<br> 3.3 <code>-user</code>   按所有者搜索<br> 3.4 <code>-mtime(atime/ctime)</code>   按时间搜索<br> 3.5 <code>-size</code>   按大小搜索<br> 3.6 <code>-a/-c</code>   多条件搜索<br> 4.7 <code>-exec [命令] {} \</code>   对搜索结果后处理</p>
+<p> <strong>按名称搜索</strong>  <code>-name</code></p>
+<pre><code>[root@arya /]# find / -name mrd
+/usr/bin/mrd
+/var/db/sudo/lectured/mrd
+/home/mrd
+</code></pre><p> 避免大范围搜索(耗资源)， 一般使用通配符匹配</p>
+<blockquote>
+<p><code>*</code>   匹配任意内容<br><code>?</code>   匹配任意一个字符<br><code>[]</code>   匹配’[]’内的任意一个字符</p>
+</blockquote>
+<p> <strong>按时间搜索</strong>  <code>-[acm]time</code></p>
+<pre><code>find /var/log/ -mtime +10   #查找10天前修改的文件
+[root@arya /]# find /var/log/  -mtime +10
+/var/log/pluto/peer
+/var/log/speech-dispatcher
+</code></pre><blockquote>
+<p><code>-10</code> 10天内；<code>10</code> 10天当天；<code>+10</code> 10天前<br><code>atime</code> 文件访问时间(access)； <code>ctime</code> 文件属性改变时间(change)； <code>mtime</code> 文件内容修改时间(modify)</p>
+</blockquote>
+<p> <strong>按大小搜索</strong>  <code>-size</code></p>
+<pre><code>[root@arya etc]# find /etc -size +2M
+/etc/udev/hwdb.bin
+/etc/selinux/targeted/policy/policy.30
+/etc/selinux/targeted/active/policy.kern
+[root@arya etc]# find /etc -size +2048k
+/etc/udev/hwdb.bin
+/etc/selinux/targeted/policy/policy.30
+/etc/selinux/targeted/active/policy.kern
+</code></pre><blockquote>
+<p><code>+25k</code>:  大于25k<br>必须加单位:  <code>k</code>(小写)/<code>M</code>(大写)</p>
+</blockquote>
+<p> <strong>find逻辑查找</strong>   <code>-a</code>/<code>-o</code>(与/或) </p>
+<pre><code>[root@arya etc]# find /etc -size +1k -a -size -3k
+</code></pre><p> <strong>find结果进行处理</strong><br> find语句 <code>-exec</code>  [命令]  <code>{}</code> <code>\</code>;</p>
+<pre><code>[root@arya etc]# find /etc -size +5M -exec ls -lh {} \;
+-r--r--r--. 1 root root 7.2M 4月  29 06:22 /etc/udev/hwdb.bin
+</code></pre></li>
+<li><p><strong>grep</strong> 搜索字符串<br> <code>grep</code> [选项] 字符串 文件名</p>
+<blockquote>
+<p>-i 忽略大小写<br>-v 排除指定字符串</p>
+</blockquote>
+<p> <strong>find vs grep</strong></p>
+<blockquote>
+<p><code>find</code>搜索文件；<code>grep</code>搜索文件内容<br><code>find</code>搜索文件名用<code>通配符</code>(<code>*</code>/<code>?</code>/<code>[]</code>)匹配，并且是<code>完全匹配</code>；<code>grep</code>搜索文件内容用<code>正则表达式</code>匹配，并且是<code>包含匹配</code>。</p>
+</blockquote>
+</li>
+</ol>
+<ul>
 <li><strong>帮助命令</strong></li>
 <li><strong>压缩解压缩命令</strong></li>
 <li><strong>关机/重启命令</strong></li>
@@ -469,6 +546,8 @@ drwxrw-r-x root root 33333  4月 29 16:50  文件名
         <div class="post-tags">
           
             <a href="/tags/linux/" rel="tag"># linux</a>
+          
+            <a href="/tags/温习/" rel="tag"># 温习</a>
           
         </div>
       
@@ -597,7 +676,7 @@ drwxrw-r-x root root 33333  4月 29 16:50  文件名
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -811,7 +890,7 @@ drwxrw-r-x root root 33333  4月 29 16:50  文件名
 		_hcwp.push({widget:"Bloggerstream", widget_id: 102996, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/04/27/2018-4-27/"});
+		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/04/27/2018-4-27 Linux/"});
 		
 
 		(function() {
