@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="还没想好">
 <meta property="og:description" content="1. Linux 安装Linux vs Windows Linux严格区分大小写 Linux中所有的内容都是文件，包括硬件 Linux不靠扩展名区分文件类型以下扩展名约定俗成，便于阅读 压缩包: .gz, .bz2, .tar.bz2, .tgz二进制软件包: .rpm网页文件: .html脚本文件: .sh配置文件: .conf">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-01T15:30:53.590Z">
+<meta property="og:updated_time" content="2018-05-02T15:26:15.424Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux 简记">
 <meta name="twitter:description" content="1. Linux 安装Linux vs Windows Linux严格区分大小写 Linux中所有的内容都是文件，包括硬件 Linux不靠扩展名区分文件类型以下扩展名约定俗成，便于阅读 压缩包: .gz, .bz2, .tar.bz2, .tgz二进制软件包: .rpm网页文件: .html脚本文件: .sh配置文件: .conf">
@@ -405,26 +405,21 @@
 <li>setup 配置虚拟机网络</li>
 <li>xshell 远程登陆</li>
 </ul>
-<h2 id="2-Linux常用命令"><a href="#2-Linux常用命令" class="headerlink" title="2. Linux常用命令"></a>2. Linux常用命令</h2><ul>
-<li><p><strong>命令基本格式</strong><br><code>命令</code>  <code>[选项]</code>  <code>[参数]</code><br>命令提示符：<code>[root@arya ~]#</code>  </p>
+<h2 id="2-Linux常用命令"><a href="#2-Linux常用命令" class="headerlink" title="2. Linux常用命令"></a>2. Linux常用命令</h2><h5 id="2-1-命令基本格式"><a href="#2-1-命令基本格式" class="headerlink" title="2.1 命令基本格式"></a>2.1 命令基本格式</h5><p><code>命令</code>  <code>[选项]</code>  <code>[参数]</code><br>命令提示符：<code>[root@arya ~]#</code>  </p>
 <blockquote>
 <p><code>root</code>: 用户<br><code>arya</code>: 主机名<br><code>~</code>: 当前目录(家目录 <code>/root</code> or <code>/home/user_name</code>)<br><code>#</code>: 超级用户提示;普通用户<code>$</code></p>
 </blockquote>
-<p>  文件信息命令：<strong>ls</strong> -l </p>
+<p>文件信息命令：<strong>ls</strong> -l </p>
 <blockquote>
 <p><code>-a</code> 显示所有文件，包括隐藏文件<br><code>-l</code> 显示详细信息<br><code>-d</code> 查看目录属性<br><code>-h</code> 人性化显示文件大小(不以字节为单位)<br><code>-i</code> 文件inode(每个文件的标识ID)</p>
 </blockquote>
 <pre><code>[root@arya ~]# ls -l
 drwxrw-r-x root root 33333  4月 29 16:50  文件名
-</code></pre><p>  <code>drwxrw-r-x</code> </p>
+</code></pre><p><code>drwxrw-r-x</code> </p>
 <blockquote>
 <p>第1位: 文件类型（<code>-</code>文件 <code>d</code>目录 <code>|</code>软连接文件）<br>2-10位: 文件权限(<code>r</code>读<code>w</code>写<code>x</code>执行; 三组分别是: <code>u</code>所有者 <code>g</code>所属组 <code>o</code>其他人)<br><code>root root 33333</code>: 文件所有者 文件所属组  文件大小(字节)</p>
 </blockquote>
-</li>
-<li><p><strong>文件处理命令</strong></p>
-</li>
-</ul>
-<ol>
+<h5 id="2-2-文件处理命令"><a href="#2-2-文件处理命令" class="headerlink" title="2.2 文件处理命令"></a>2.2 文件处理命令</h5><ol>
 <li><p>目录/文件<br> <strong>创建目录</strong> : <strong><code>mkdir -p [目录名]</code></strong>   <em>make directories</em><br> <code>-p</code>   递归创建 <code>mkdir -p father/son</code></p>
 <p> <strong>切换目录</strong> : <strong><code>cd</code></strong> <em>change directories</em><br> <code>tab</code>   目录补齐，提示</p>
 <p> <strong>删除目录</strong> : <strong><code>rm -rf 文件或目录</code></strong>   <em>remove</em><br> <code>-r</code>   删除目录<br> <code>-f</code>   强制(force)</p>
@@ -434,10 +429,7 @@ drwxrw-r-x root root 33333  4月 29 16:50  文件名
 <li><p>链接<br> <strong>链接</strong> : <strong><code>ln -s [源文件] [目标文件]</code></strong>  <em>link</em><br> <code>-s</code>  创建软链接(类似快捷方式,与硬链接区别可查资料)</p>
 </li>
 </ol>
-<ul>
-<li><strong>文件搜索命令</strong></li>
-</ul>
-<ol>
+<h5 id="2-3-文件搜索命令"><a href="#2-3-文件搜索命令" class="headerlink" title="2.3 文件搜索命令"></a>2.3 文件搜索命令</h5><ol>
 <li>搜索文件: <strong><code>locate [文件名]</code></strong><br> 在<code>locate</code> <code>db</code>(<code>/var/lib/mlocate</code>)数据库中搜索，不用全盘扫描，速度块。<br> 命令<code>updatedb</code> : 强制更新locate数据库(默认一天一更新)<br> locate配置文件 : <code>/etc/updatedb.conf</code></li>
 <li><p>搜索命令: <strong><code>whereis [命令名]</code></strong>  <strong><code>which [命令名]</code></strong></p>
 <pre><code>[root@arya mlocate]# whereis ls
@@ -498,12 +490,45 @@ alias ls=&apos;ls --color=auto&apos;
 </blockquote>
 </li>
 </ol>
+<h5 id="2-4-帮助命令"><a href="#2-4-帮助命令" class="headerlink" title="2.4 帮助命令"></a>2.4 帮助命令</h5><blockquote>
+<p><strong><code>man</code> <code>[命令]</code></strong>  </p>
+</blockquote>
+<p><code>man -f passwd</code>         <em><code>-f</code>命令等级</em><br><code>man 5 passwd</code></p>
+<blockquote>
+<p><strong><code>[命令]</code>  <code>--help</code></strong>   <em>选项帮助</em></p>
+</blockquote>
+<h5 id="2-5-压缩解压缩命令"><a href="#2-5-压缩解压缩命令" class="headerlink" title="2.5 压缩解压缩命令"></a>2.5 压缩解压缩命令</h5><p><strong>1）压缩文件格式</strong></p>
+<p><code>.zip</code>  </p>
+<blockquote>
+<p>zip  [压缩文件名] [源文件]<br>zip <code>-r</code> [压缩文件名] [源目录]<br>unzip </p>
+</blockquote>
+<p><code>.gz</code>   </p>
+<blockquote>
+<p>gzip [源文件] <em>不保留源文件</em><br>gzip <code>-c</code> [源文件] &gt; [压缩文件] <em>保留源文件</em><br>gzip <code>-r</code> [目录] <em>压缩目录下的文件，不能压缩目录</em><br>gunzip</p>
+</blockquote>
+<p><code>.bz2</code>  </p>
+<blockquote>
+<p>bzip2 [源文件]<br>bzip2 <code>-k</code> [源文件] <em>保留源文件</em><br>bzip2不能压缩目录<br>bunzip2 [压缩文件]</p>
+</blockquote>
+<p><strong>2）常用压缩解压缩命令</strong><br>先打包文件，再压缩成相应的压缩文件格式</p>
 <ul>
-<li><strong>帮助命令</strong></li>
-<li><strong>压缩解压缩命令</strong></li>
-<li><strong>关机/重启命令</strong></li>
-<li><strong>其他命令</strong></li>
+<li><p><strong><code>tar</code></strong><br><code>tar -cvf [打包文件名] [源文件]</code><br><code>tar -xvf [打包文件名]</code><br>options :</p>
+<blockquote>
+<p><code>-v</code> 显示过程<br><code>-f</code> 指定打包后的文件名<br><code>-c</code> <strong>打包</strong><br><code>-x</code> <strong>解包</strong></p>
+</blockquote>
+</li>
+<li><p><strong><code>.tar.gz</code></strong><br><code>tar -zcvf  [压缩包名.tar.gz] [源文件]</code><br><code>tar -zxvf  [压缩包名.tar.gz]</code><br>options : </p>
+<blockquote>
+<p><code>-z</code> <strong>压缩/解压缩<code>tar.gz</code>格式</strong></p>
+</blockquote>
+</li>
+<li><p><strong><code>.tar.bz2</code></strong><br><code>tar -jcvf [压缩包名.tar.bz2] [源文件]</code><br><code>tar -jxvf [压缩包名.tar.bz2]</code><br>options :</p>
+<blockquote>
+<p><code>-j</code> <strong>压缩/解压缩<code>tar.bz2</code>格式</strong></p>
+</blockquote>
+</li>
 </ul>
+<h5 id="2-6-关机-重启命令"><a href="#2-6-关机-重启命令" class="headerlink" title="2.6 关机/重启命令"></a>2.6 关机/重启命令</h5><h5 id="2-7-其他命令"><a href="#2-7-其他命令" class="headerlink" title="2.7 其他命令"></a>2.7 其他命令</h5><p>su root 切换用户 switch user<br>passwd  修改密码</p>
 
       
     </div>
@@ -709,7 +734,7 @@ alias ls=&apos;ls --color=auto&apos;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Linux-安装"><span class="nav-number">1.</span> <span class="nav-text">1. Linux 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux-vs-Windows"><span class="nav-number">1.0.1.</span> <span class="nav-text">Linux vs Windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux安装"><span class="nav-number">1.0.2.</span> <span class="nav-text">Linux安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#linux硬盘分区"><span class="nav-number">1.0.3.</span> <span class="nav-text">linux硬盘分区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#延伸"><span class="nav-number">1.0.4.</span> <span class="nav-text">延伸</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Linux常用命令"><span class="nav-number">2.</span> <span class="nav-text">2. Linux常用命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Linux-安装"><span class="nav-number">1.</span> <span class="nav-text">1. Linux 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux-vs-Windows"><span class="nav-number">1.0.1.</span> <span class="nav-text">Linux vs Windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux安装"><span class="nav-number">1.0.2.</span> <span class="nav-text">Linux安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#linux硬盘分区"><span class="nav-number">1.0.3.</span> <span class="nav-text">linux硬盘分区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#延伸"><span class="nav-number">1.0.4.</span> <span class="nav-text">延伸</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Linux常用命令"><span class="nav-number">2.</span> <span class="nav-text">2. Linux常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-命令基本格式"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">2.1 命令基本格式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-文件处理命令"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">2.2 文件处理命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-文件搜索命令"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">2.3 文件搜索命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-帮助命令"><span class="nav-number">2.0.0.4.</span> <span class="nav-text">2.4 帮助命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-5-压缩解压缩命令"><span class="nav-number">2.0.0.5.</span> <span class="nav-text">2.5 压缩解压缩命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-6-关机-重启命令"><span class="nav-number">2.0.0.6.</span> <span class="nav-text">2.6 关机/重启命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-7-其他命令"><span class="nav-number">2.0.0.7.</span> <span class="nav-text">2.7 其他命令</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
