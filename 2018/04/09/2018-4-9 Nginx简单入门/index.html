@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="markdown," />
+  <meta name="keywords" content="nginx," />
 
 
 
@@ -79,20 +79,20 @@
 
 
 
-<meta name="description" content="Why Markdown 易读，易写，纯文本，极简主义 兼容HTML 跨平台 优雅">
-<meta name="keywords" content="markdown">
+<meta name="description" content="1. nginx windows 安装1.1 下载 nginx download   1.2 启动 nginx -c nginx/nginx.conf    -c 指定从配置文件启动  1.3 访问nginx.conf配置的地址，显示nginx首页    Welcome to nginx!">
+<meta name="keywords" content="nginx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown语法简记">
-<meta property="og:url" content="http://dengzhe.xyz/2018/03/27/Markdown简记/index.html">
+<meta property="og:title" content="Nginx 简单入门">
+<meta property="og:url" content="http://dengzhe.xyz/2018/04/09/2018-4-9 Nginx简单入门/index.html">
 <meta property="og:site_name" content="还没想好">
-<meta property="og:description" content="Why Markdown 易读，易写，纯文本，极简主义 兼容HTML 跨平台 优雅">
+<meta property="og:description" content="1. nginx windows 安装1.1 下载 nginx download   1.2 启动 nginx -c nginx/nginx.conf    -c 指定从配置文件启动  1.3 访问nginx.conf配置的地址，显示nginx首页    Welcome to nginx!">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://dengzhe.xyz/images/樱园.jpg">
-<meta property="og:updated_time" content="2018-05-06T16:44:50.632Z">
+<meta property="og:image" content="http://dengzhe.xyz/images/nginx.png">
+<meta property="og:updated_time" content="2018-05-06T16:46:17.640Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown语法简记">
-<meta name="twitter:description" content="Why Markdown 易读，易写，纯文本，极简主义 兼容HTML 跨平台 优雅">
-<meta name="twitter:image" content="https://dengzhe.xyz/images/樱园.jpg">
+<meta name="twitter:title" content="Nginx 简单入门">
+<meta name="twitter:description" content="1. nginx windows 安装1.1 下载 nginx download   1.2 启动 nginx -c nginx/nginx.conf    -c 指定从配置文件启动  1.3 访问nginx.conf配置的地址，显示nginx首页    Welcome to nginx!">
+<meta name="twitter:image" content="http://dengzhe.xyz/images/nginx.png">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://dengzhe.xyz/2018/03/27/Markdown简记/"/>
+  <link rel="canonical" href="http://dengzhe.xyz/2018/04/09/2018-4-9 Nginx简单入门/"/>
 
 
 
 
 
-  <title>Markdown语法简记 | 还没想好</title>
+  <title>Nginx 简单入门 | 还没想好</title>
   
 
 
@@ -273,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/03/27/Markdown简记/">
+    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/04/09/2018-4-9 Nginx简单入门/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="我在山顶刮大风">
@@ -290,7 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Markdown语法简记</h1>
+          <h1 class="post-title" itemprop="name headline">Nginx 简单入门</h1>
         
 
         <div class="post-meta">
@@ -302,8 +302,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-27T22:27:13+08:00">
-                2018-03-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T21:46:44+08:00">
+                2018-04-09
               </time>
             
 
@@ -325,8 +325,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/语言/" itemprop="url" rel="index">
-                    <span itemprop="name">语言</span>
+                  <a href="/categories/中间件/" itemprop="url" rel="index">
+                    <span itemprop="name">中间件</span>
                   </a>
                 </span>
 
@@ -344,8 +344,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/27/Markdown简记/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2018/03/27/Markdown简记/" itemprop="commentsCount"></span>
+                <a href="/2018/04/09/2018-4-9 Nginx简单入门/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/04/09/2018-4-9 Nginx简单入门/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -374,55 +374,154 @@
       
 
       
-        <h2 id="Why-Markdown"><a href="#Why-Markdown" class="headerlink" title="Why Markdown"></a>Why Markdown</h2><ul>
-<li>易读，易写，纯文本，极简主义</li>
-<li>兼容HTML</li>
-<li>跨平台</li>
-<li>优雅</li>
-</ul>
+        <h3 id="1-nginx-windows-安装"><a href="#1-nginx-windows-安装" class="headerlink" title="1. nginx windows 安装"></a>1. nginx windows 安装</h3><p>1.1 下载</p>
+<p><a href="http://nginx.org" title="http://nginx.org" target="_blank" rel="noopener">nginx download</a>  </p>
+<p>1.2 启动</p>
+<pre><code>nginx -c nginx/nginx.conf  
+</code></pre><blockquote>
+<p>-c 指定从配置文件启动</p>
+</blockquote>
+<p>1.3 访问nginx.conf配置的地址，显示nginx首页  </p>
+<blockquote>
+<p><a href="localhost:80" title="localhost:80" target="_blank" rel="noopener">Welcome to nginx!</a></p>
+</blockquote>
 <a id="more"></a>
-<h2 id="How-to-write"><a href="#How-to-write" class="headerlink" title="How to write"></a>How to write</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h3><p>两种形式：</p>
-<p>1.1 使用====和—-标记一二级标题</p>
+<img src="/images/nginx.png">
+<h3 id="2-nginx-常用命令"><a href="#2-nginx-常用命令" class="headerlink" title="2. nginx 常用命令"></a>2. nginx 常用命令</h3><pre><code>nginx -s command
+</code></pre><p> -s(signal)：向主进程发送信号</p>
 <blockquote>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
-<p>1.2 使用#，标记1-6级标题。</p>
-<blockquote>
-<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
-<h3 id="2-段落"><a href="#2-段落" class="headerlink" title="2. 段落"></a>2. 段落</h3><p>2.1 前后有空行<br>2.2 段内强制换行-&gt; 两个以上空格+回车</p>
-<h3 id="3-区块引用"><a href="#3-区块引用" class="headerlink" title="3. 区块引用"></a>3. 区块引用</h3><p>使用符号&gt;</p>
-<blockquote>
-<p>区块引用</p>
-<blockquote>
-<p>嵌套引用</p>
+<ul>
+<li>nginx -c conf/nginx.conf 启动  </li>
+<li>reload 重新加载配置文件</li>
+<li>quit 优雅关闭</li>
+<li>stop 快速关闭</li>
+<li>reopen 重新打开日志文件</li>
+</ul>
 </blockquote>
+<h3 id="3-nginx-常见用途"><a href="#3-nginx-常见用途" class="headerlink" title="3. nginx 常见用途"></a>3. nginx 常见用途</h3><blockquote>
+<ul>
+<li>静态HTTP服务器</li>
+<li>反向代理服务器</li>
+<li>负载均衡</li>
+<li>虚拟主机</li>
+</ul>
 </blockquote>
-<h3 id="4-代码区块"><a href="#4-代码区块" class="headerlink" title="4. 代码区块"></a>4. 代码区块</h3><p>每行四个空格或者一个Tab</p>
-<pre><code>console.log(&quot;this is code area&quot;)
-</code></pre><h3 id="5-强调"><a href="#5-强调" class="headerlink" title="5. 强调"></a>5. 强调</h3><p>强调内容两侧加上*或者_，*或_表示斜体，**或__表示粗体。  </p>
+<h4 id="3-1-静态HTTP服务器"><a href="#3-1-静态HTTP服务器" class="headerlink" title="3.1. 静态HTTP服务器"></a>3.1. 静态HTTP服务器</h4><p>nginx是一个http服务器，客户端可以通过http协议访问nginx静态服务器上的静态资源。</p>
+<pre><code>server {
+    listen 8081;
+    server_name localhost;
+}
+
+location / {
+    root  /staticResource;
+    index index.html
+}
+</code></pre><ul>
+<li>访问localhost:8081，会默认访问staticResource下的index.html。</li>
+<li>js/css/jar等各种静态资源，均可通过http协议获取。<blockquote>
+<p><a href="http://localhost:8081/org.apache.util-1.0.0.jar" target="_blank" rel="noopener">http://localhost:8081/org.apache.util-1.0.0.jar</a><br><a href="http://localhost:8081/js/index.js" target="_blank" rel="noopener">http://localhost:8081/js/index.js</a></p>
+</blockquote>
+</li>
+</ul>
+<h4 id="3-2-反向代理服务器"><a href="#3-2-反向代理服务器" class="headerlink" title="3.2. 反向代理服务器"></a>3.2. 反向代理服务器</h4><p><strong>1）代理服务器</strong></p>
+<p>客户端在发送请求时，不会直接发送给目的主机，而是先发给代理服务器。代理服务器收到请求后，向目的主机发出，并接收主机返回的数据，存放在代理服务器硬盘，再发送给客户机。</p>
+<p>代理服务器用途：</p>
 <blockquote>
-<p><em>斜体</em>，_斜体_<br><strong>粗体</strong>，<strong>粗体</strong></p>
-</blockquote>
-<h3 id="6-列表"><a href="#6-列表" class="headerlink" title="6. 列表"></a>6. 列表</h3><blockquote>
-<p>+、- 标记无序列表<br>数字+.标记有序列表</p>
-</blockquote>
-<p>+无序列表<br>-无序列表</p>
 <ol>
-<li>有序列表</li>
-<li>有序列表</li>
+<li>缓存，提高访问速度</li>
+<li>防火墙，过滤不安全信息</li>
+<li>梯子，通过代理服务器访问不能访问的目标站点</li>
 </ol>
-<h3 id="7-分隔线"><a href="#7-分隔线" class="headerlink" title="7. 分隔线"></a>7. 分隔线</h3><p>三个以上 - 或者 _ 或者 *</p>
-<hr>
-<h3 id="8-链接"><a href="#8-链接" class="headerlink" title="8. 链接"></a>8. 链接</h3><p>[链接](地址 “鼠标悬浮文字”)</p>
-<blockquote>
-<p><a href="https://dengzhe.xyz" title="我的链接">我的链接</a></p>
 </blockquote>
-<h3 id="9-图片"><a href="#9-图片" class="headerlink" title="9. 图片"></a>9. 图片</h3><p>![链接](地址 “鼠标悬浮文字”)<br><img src="https://dengzhe.xyz/images/樱园.jpg" alt="图片" title="樱园"></p>
-<h3 id="10-符号’-’"><a href="#10-符号’-’" class="headerlink" title="10. 符号’`’"></a>10. 符号’`’</h3><p>标记作用  </p>
-<blockquote>
-<p><code>small code area</code></p>
-</blockquote>
-<h3 id="11-反斜杠"><a href="#11-反斜杠" class="headerlink" title="11. 反斜杠\"></a>11. 反斜杠\</h3><p>相当于转义</p>
-<p>>转义区块引用附’&gt;’</p>
+<p><strong>2）正向代理与反向代理</strong></p>
+<ul>
+<li><p>正向代理：客户端代理，为客户端收发请求，真实客户端对服务器不可见；如用于翻墙的代理服务器。</p>
+</li>
+<li><p>反向代理：服务器代理，为服务器收发请求，真实服务器对客户端不可见；如CDN。</p>
+</li>
+</ul>
+<p>下面通过访问 <a href="http://www.youtube.com" target="_blank" rel="noopener">www.youtube.com</a> 来解释正向代理与反向代理。</p>
+<p>1）自己搭梯子或者找代理服务器。</p>
+<p>2）系统设置代理，windows在<code>连接</code>-<code>局域网设置</code>-<code>代理服务器</code>中配置代理服务器地址及端口。如 <code>proxy.xxx.com 8080</code></p>
+<p>此时，访问 <code>youtube.com</code>，请求首先会发送给代理服务器（<code>正向代理</code>），代理服务器再将请求发送给<code>youtube.com</code>（<code>反向代理</code>）,并接收youtube的响应放在代理服务器上，之后你从代理服务器拿走响应，返回给自己浏览器。</p>
+<p>代理服务器访问<code>youtube.com</code>，即是访问反向代理服务器。反向代理服务器通过<code>负载均衡</code>等策略从真实的服务器获取响应（从静态代理服务器返回js/css等静态资源，从动态服务器返回后台数据）。</p>
+<p><strong>3）nginx反向代理</strong></p>
+<pre><code> server {  
+    listen       80;                                                         
+    server_name  localhost;                                               
+
+    # 反向代理服务器
+    location / {
+        proxy_pass http://localhost:8080;
+    }
+
+    # 图片静态服务器
+    location ~ \.(gif|jpg|png)$ {
+        root F:\staticResource;
+    }
+}
+</code></pre><h4 id="3-3-负载均衡"><a href="#3-3-负载均衡" class="headerlink" title="3.3 负载均衡"></a>3.3 负载均衡</h4><p>nginx反向代理可以将客户端的请求分发给多个服务端，实现服务端的负载均衡。</p>
+<pre><code>upstream server-list {
+    server 192.168.20.1:8080;
+    server 192.168.20.2:8080;
+}
+server {
+    listen 80;
+    server_name localhost;
+    location / {
+        proxy_pass http://server-list;
+    }
+}
+</code></pre><p>负载均衡策略：</p>
+<ol>
+<li><p>RR<br>每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除；如上面server-list配置。</p>
+</li>
+<li><p>权重</p>
+<pre><code>upstream server-list {
+    server 192.168.20.1:8080 weight=9;
+    server 192.168.20.2:8080 weight=1;
+}
+</code></pre></li>
+<li><p>ip_hash<br>上面两种负载均衡的策略会有一个问题，一个用户的多次请求可能会在不同的服务器中，这时候session如果没有在各个服务器之前同步，会造成鉴权等一系列问题。<br>ip-hash负载均衡策略会按照请求的ip hash来分配服务器，所以一个用户固定访问一台服务器。</p>
+<pre><code>upstream server-list {
+    ip_hash;
+    server 192.168.20.1:8080;
+    server 192.168.20.2:8080;
+}
+</code></pre></li>
+<li><p>fair（第三方）<br>按后端服务器的响应时间来分配请求，响应时间短的优先分配。</p>
+<pre><code>upstream server-list { 
+    fair; 
+    server 192.168.20.1:8080;
+    server 192.168.20.2:8080;
+}
+</code></pre></li>
+<li><p>url_hash（第三方）<br>按访问url的hash结果来分配请求，使每个url定向到同一个后端服务器，后端服务器为缓存时比较有效。 在upstream中加入hash语句，server语句中不能写入weight等其他的参数，hash_method是使用的hash算法</p>
+<pre><code>upstream backend { 
+    hash $request_uri; 
+    hash_method crc32; 
+    server localhost:8080;
+    server localhost:8081;
+} 
+</code></pre></li>
+</ol>
+<h4 id="3-4-虚拟主机"><a href="#3-4-虚拟主机" class="headerlink" title="3.4 虚拟主机"></a>3.4 虚拟主机</h4><p>有些小网站需要节省成本，可以把多个网站部署在同一个服务器上，分别对应同一个ip的不同端口。两个网站访问互不影响，就像访问两个服务器一样，所以叫虚拟主机;虚拟主机的原理是通过HTTP请求头中的Host是否匹配server_name来实现的。</p>
+<pre><code>server {
+    listen 80;
+    server_name www.a.com;
+    location / {
+        proxy_pass http://localhost:8080;
+    }
+}
+
+server {
+    listen 80;
+    server_name www.b.com;
+    location / {
+        proxy_pass http://localhost:8081;
+    }
+}
+</code></pre><p>以上是nginx的简单入门，后续深入了解nginx在实际生产中的应用。</p>
 
       
     </div>
@@ -464,7 +563,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/markdown/" rel="tag"># markdown</a>
+            <a href="/tags/nginx/" rel="tag"># nginx</a>
           
         </div>
       
@@ -477,8 +576,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/24/三月的尾巴/" rel="next" title="三月快到尾巴">
-                <i class="fa fa-chevron-left"></i> 三月快到尾巴
+              <a href="/2018/04/05/2018-04-05清明/" rel="next" title="清明时间雨纷纷">
+                <i class="fa fa-chevron-left"></i> 清明时间雨纷纷
               </a>
             
           </div>
@@ -487,8 +586,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/05/2018-04-05清明/" rel="prev" title="清明时间雨纷纷">
-                清明时间雨纷纷 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/18/2018-4-18 API 网关/" rel="prev" title="API 网关">
+                API 网关 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -630,7 +729,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-Markdown"><span class="nav-number">1.</span> <span class="nav-text">Why Markdown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-write"><span class="nav-number">2.</span> <span class="nav-text">How to write</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-标题"><span class="nav-number">2.1.</span> <span class="nav-text">1. 标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题-1"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题-1"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-段落"><span class="nav-number">1.2.</span> <span class="nav-text">2. 段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-区块引用"><span class="nav-number">1.3.</span> <span class="nav-text">3. 区块引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-代码区块"><span class="nav-number">1.4.</span> <span class="nav-text">4. 代码区块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-强调"><span class="nav-number">1.5.</span> <span class="nav-text">5. 强调</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-列表"><span class="nav-number">1.6.</span> <span class="nav-text">6. 列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-分隔线"><span class="nav-number">1.7.</span> <span class="nav-text">7. 分隔线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-链接"><span class="nav-number">1.8.</span> <span class="nav-text">8. 链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-图片"><span class="nav-number">1.9.</span> <span class="nav-text">9. 图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-符号’-’"><span class="nav-number">1.10.</span> <span class="nav-text">10. 符号’`’</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-反斜杠"><span class="nav-number">1.11.</span> <span class="nav-text">11. 反斜杠\</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-nginx-windows-安装"><span class="nav-number">1.</span> <span class="nav-text">1. nginx windows 安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-nginx-常用命令"><span class="nav-number">2.</span> <span class="nav-text">2. nginx 常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-nginx-常见用途"><span class="nav-number">3.</span> <span class="nav-text">3. nginx 常见用途</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-静态HTTP服务器"><span class="nav-number">3.1.</span> <span class="nav-text">3.1. 静态HTTP服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-反向代理服务器"><span class="nav-number">3.2.</span> <span class="nav-text">3.2. 反向代理服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-负载均衡"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 负载均衡</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-虚拟主机"><span class="nav-number">3.4.</span> <span class="nav-text">3.4 虚拟主机</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -811,7 +910,7 @@
 		_hcwp.push({widget:"Bloggerstream", widget_id: 102996, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/03/27/Markdown简记/"});
+		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/04/09/2018-4-9 Nginx简单入门/"});
 		
 
 		(function() {
