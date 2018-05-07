@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="nginx," />
+  <meta name="keywords" content="iframe,浏览器同源," />
 
 
 
@@ -79,20 +79,18 @@
 
 
 
-<meta name="description" content="1. nginx windows 安装1.1 下载 nginx download   1.2 启动 nginx -c nginx/nginx.conf    -c 指定从配置文件启动  1.3 访问nginx.conf配置的地址，显示nginx首页    Welcome to nginx!">
-<meta name="keywords" content="nginx">
+<meta name="description" content="一. 浏览器同源策略same originTwo URLs are said to have the “same origin” if they have the same protocol, domain and port.The “Same Origin” (same site) policy limits access of windows and frame to each other.">
+<meta name="keywords" content="iframe,浏览器同源">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nginx 简单入门">
-<meta property="og:url" content="http://dengzhe.xyz/2018/04/09/2018-4-9 Nginx简单入门/index.html">
+<meta property="og:title" content="浏览器同源策略及跨域通信">
+<meta property="og:url" content="http://dengzhe.xyz/2018/05/07/2018-5-7 浏览器同源/index.html">
 <meta property="og:site_name" content="还没想好">
-<meta property="og:description" content="1. nginx windows 安装1.1 下载 nginx download   1.2 启动 nginx -c nginx/nginx.conf    -c 指定从配置文件启动  1.3 访问nginx.conf配置的地址，显示nginx首页    Welcome to nginx!">
+<meta property="og:description" content="一. 浏览器同源策略same originTwo URLs are said to have the “same origin” if they have the same protocol, domain and port.The “Same Origin” (same site) policy limits access of windows and frame to each other.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://dengzhe.xyz/images/nginx.png">
-<meta property="og:updated_time" content="2018-05-06T16:46:17.640Z">
+<meta property="og:updated_time" content="2018-05-07T12:39:16.635Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nginx 简单入门">
-<meta name="twitter:description" content="1. nginx windows 安装1.1 下载 nginx download   1.2 启动 nginx -c nginx/nginx.conf    -c 指定从配置文件启动  1.3 访问nginx.conf配置的地址，显示nginx首页    Welcome to nginx!">
-<meta name="twitter:image" content="http://dengzhe.xyz/images/nginx.png">
+<meta name="twitter:title" content="浏览器同源策略及跨域通信">
+<meta name="twitter:description" content="一. 浏览器同源策略same originTwo URLs are said to have the “same origin” if they have the same protocol, domain and port.The “Same Origin” (same site) policy limits access of windows and frame to each other.">
 
 
 
@@ -122,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://dengzhe.xyz/2018/04/09/2018-4-9 Nginx简单入门/"/>
+  <link rel="canonical" href="http://dengzhe.xyz/2018/05/07/2018-5-7 浏览器同源/"/>
 
 
 
 
 
-  <title>Nginx 简单入门 | 还没想好</title>
+  <title>浏览器同源策略及跨域通信 | 还没想好</title>
   
 
 
@@ -273,7 +271,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/04/09/2018-4-9 Nginx简单入门/">
+    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/05/07/2018-5-7 浏览器同源/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="我在山顶刮大风">
@@ -290,7 +288,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Nginx 简单入门</h1>
+          <h1 class="post-title" itemprop="name headline">浏览器同源策略及跨域通信</h1>
         
 
         <div class="post-meta">
@@ -302,8 +300,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T21:46:44+08:00">
-                2018-04-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-07T19:20:33+08:00">
+                2018-05-07
               </time>
             
 
@@ -312,28 +310,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中间件/" itemprop="url" rel="index">
-                    <span itemprop="name">中间件</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -344,8 +320,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/09/2018-4-9 Nginx简单入门/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2018/04/09/2018-4-9 Nginx简单入门/" itemprop="commentsCount"></span>
+                <a href="/2018/05/07/2018-5-7 浏览器同源/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/05/07/2018-5-7 浏览器同源/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -374,154 +350,90 @@
       
 
       
-        <h3 id="1-nginx-windows-安装"><a href="#1-nginx-windows-安装" class="headerlink" title="1. nginx windows 安装"></a>1. nginx windows 安装</h3><p>1.1 下载</p>
-<p><a href="http://nginx.org" title="http://nginx.org" target="_blank" rel="noopener">nginx download</a>  </p>
-<p>1.2 启动</p>
-<pre><code>nginx -c nginx/nginx.conf  
-</code></pre><blockquote>
-<p>-c 指定从配置文件启动</p>
-</blockquote>
-<p>1.3 访问nginx.conf配置的地址，显示nginx首页  </p>
-<blockquote>
-<p><a href="localhost:80" title="localhost:80" target="_blank" rel="noopener">Welcome to nginx!</a></p>
-</blockquote>
-<a id="more"></a>
-<img src="/images/nginx.png">
-<h3 id="2-nginx-常用命令"><a href="#2-nginx-常用命令" class="headerlink" title="2. nginx 常用命令"></a>2. nginx 常用命令</h3><pre><code>nginx -s command
-</code></pre><p> -s(signal)：向主进程发送信号</p>
-<blockquote>
+        <h2 id="一-浏览器同源策略"><a href="#一-浏览器同源策略" class="headerlink" title="一. 浏览器同源策略"></a>一. 浏览器同源策略</h2><h4 id="same-origin"><a href="#same-origin" class="headerlink" title="same origin"></a>same origin</h4><p>Two URLs are said to have the “same origin” if they have the same <code>protocol</code>, <code>domain</code> and <code>port</code>.The “Same Origin” (same site) policy limits access of windows and frame to each other.</p>
+<p>如果<code>window</code>一级域名相同，如 <code>site.com</code>, <code>app.site.com</code>, <code>weapp.site.com</code>，可以通过设置所有窗口的<code>document.domain</code>，来认为这些域名是同源的</p>
+<pre><code>document.domain = &apos;site.com&apos;;
+</code></pre><h4 id="same-origin-policy-limitations"><a href="#same-origin-policy-limitations" class="headerlink" title="same origin policy limitations"></a>same origin policy limitations</h4><ul>
+<li><code>Cookie</code>、<code>LocalStorage</code>、<code>IndexDB</code> 无法读取</li>
+<li><code>DOM</code>无法获得</li>
+<li><code>AJAX</code>请求不能发送</li>
+</ul>
+<p>通过<code>iframe</code>或者<code>popup</code>获得的另一个<code>window</code>的引用，如果两个<code>window</code>是同源的，访问不收限制。如果是非同源的，只能修改它的<code>location</code>（不能读取）；只能获得<code>iframe</code>的窗口引用（<code>iframe.contentWindow</code>），不能读取窗口引用的属性。</p>
+<h2 id="二-iframe-cross-window-messaging"><a href="#二-iframe-cross-window-messaging" class="headerlink" title="二. iframe cross-window messaging"></a>二. iframe cross-window messaging</h2><p>对<code>iframe</code>来说，受限于同源政策，各<code>window</code>之间一般通过<code>window.postMessage</code>进行消息传递。</p>
+<p>For iframes, we can access parent/children windows using:</p>
 <ul>
-<li>nginx -c conf/nginx.conf 启动  </li>
-<li>reload 重新加载配置文件</li>
-<li>quit 优雅关闭</li>
-<li>stop 快速关闭</li>
-<li>reopen 重新打开日志文件</li>
+<li><code>window.frames</code> – a collection of nested window objects,</li>
+<li><code>window.parent</code>, <code>window.to</code>p are the references to parent and top windows,</li>
+<li><code>iframe.contentWindow</code> is the window inside an <code>&lt;iframe&gt;</code> tag.</li>
 </ul>
-</blockquote>
-<h3 id="3-nginx-常见用途"><a href="#3-nginx-常见用途" class="headerlink" title="3. nginx 常见用途"></a>3. nginx 常见用途</h3><blockquote>
+<p>If windows share the <code>same origin</code> (host, port, protocol), then windows can do whatever they want with each other. Otherwise, only possible actions are:</p>
 <ul>
-<li>静态HTTP服务器</li>
-<li>反向代理服务器</li>
-<li>负载均衡</li>
-<li>虚拟主机</li>
-</ul>
-</blockquote>
-<h4 id="3-1-静态HTTP服务器"><a href="#3-1-静态HTTP服务器" class="headerlink" title="3.1. 静态HTTP服务器"></a>3.1. 静态HTTP服务器</h4><p>nginx是一个http服务器，客户端可以通过http协议访问nginx静态服务器上的静态资源。</p>
-<pre><code>server {
-    listen 8081;
-    server_name localhost;
-}
-
-location / {
-    root  /staticResource;
-    index index.html
-}
-</code></pre><ul>
-<li>访问localhost:8081，会默认访问staticResource下的index.html。</li>
-<li>js/css/jar等各种静态资源，均可通过http协议获取。<blockquote>
-<p><a href="http://localhost:8081/org.apache.util-1.0.0.jar" target="_blank" rel="noopener">http://localhost:8081/org.apache.util-1.0.0.jar</a><br><a href="http://localhost:8081/js/index.js" target="_blank" rel="noopener">http://localhost:8081/js/index.js</a></p>
-</blockquote>
+<li>Change the location of another window (write-only access).</li>
+<li><p>Post a message(<code>window.postMessage</code>) to it.</p>
 </li>
-</ul>
-<h4 id="3-2-反向代理服务器"><a href="#3-2-反向代理服务器" class="headerlink" title="3.2. 反向代理服务器"></a>3.2. 反向代理服务器</h4><p><strong>1）代理服务器</strong></p>
-<p>客户端在发送请求时，不会直接发送给目的主机，而是先发给代理服务器。代理服务器收到请求后，向目的主机发出，并接收主机返回的数据，存放在代理服务器硬盘，再发送给客户机。</p>
-<p>代理服务器用途：</p>
+<li><h4 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h4><p>The window that wants to send a message calls postMessage method of the receiving window. In other words, if we want to send the message to win, we should call <code>win</code>.postMessage(<code>data</code>, <code>targetOrigin</code>).</p>
 <blockquote>
-<ol>
-<li>缓存，提高访问速度</li>
-<li>防火墙，过滤不安全信息</li>
-<li>梯子，通过代理服务器访问不能访问的目标站点</li>
-</ol>
+<p><code>win</code> 目标窗口<br><code>data</code> 发送数据<br><code>targetOrigin</code> 目标origin(协议 + 域名 + 端口)；也可为<code>*</code>，表示不限制域名。</p>
 </blockquote>
-<p><strong>2）正向代理与反向代理</strong></p>
-<ul>
-<li><p>正向代理：客户端代理，为客户端收发请求，真实客户端对服务器不可见；如用于翻墙的代理服务器。</p>
+<p>  <strong><code>data</code></strong><br>  The data to send. Can be any object, the data is cloned using the “structured cloning algorithm”. IE supports only strings, so we should JSON.stringify complex objects to support that browser.</p>
+<p>  <strong><code>targetOrigin</code></strong><br>  Specifies the origin for the target window, so that only a window from the given origin will get the message.<br>  The targetOrigin is a safety measure. Remember, if the target window comes from another origin, we can’t read it’s location. So we can’t be sure which site is open in the intended window right now: the user could navigate away.</p>
+<p>  <strong><code>Specifying targetOrigin ensures that the window only receives the data if it’s still at that site. Good when the data is sensitive.</code></strong></p>
+<p>  For instance, here win will only receive the message if it has a document from the origin <a href="http://example.com" target="_blank" rel="noopener">http://example.com</a>:</p>
+<pre><code>&lt;iframe src=&quot;http://example.com&quot; name=&quot;example&quot;&gt;
+
+&lt;script&gt;
+    let win = window.frames.example;
+    win.postMessage(&quot;message&quot;, &quot;http://example.com&quot;);
+&lt;/script&gt;
+</code></pre><p>  If we don’t want that check, we can set targetOrigin to *.</p>
 </li>
-<li><p>反向代理：服务器代理，为服务器收发请求，真实服务器对客户端不可见；如CDN。</p>
+<li><h4 id="onmessage"><a href="#onmessage" class="headerlink" title="onmessage"></a>onmessage</h4><p>  To receive a message, the target window should have a handler on the message event. It triggers when postMessage is called (and targetOrigin check is successful).</p>
+<p>  The event object has special properties:</p>
+<p>  <strong><code>data</code></strong><br>  The data from postMessage.<br>  <strong><code>origin</code></strong><br>  The origin of the sender, for instance <a href="http://javascript.info" target="_blank" rel="noopener">http://javascript.info</a>.<br>  <strong><code>source</code></strong><br>  The reference to the sender window. <strong><code>We can immediately postMessage back if we want</code></strong>.</p>
+<p>  To assign that handler, we should use addEventListener, a short syntax window.onmessage does not work.</p>
+<pre><code>window.addEventListener(&quot;message&quot;, function(event) {
+if (event.origin != &apos;http://javascript.info&apos;) { 
+    event.source.postMessage(&apos;&apos;,&apos;http://sub.javascript.info&apos;);
+}
+alert( &quot;received: &quot; + event.data );
+});
+</code></pre><p>  <strong>There’s no delay</strong><br>  There’s totally no delay between postMessage and the message event. That happens synchronously, even faster than setTimeout(…,0).</p>
 </li>
 </ul>
-<p>下面通过访问 <a href="http://www.youtube.com" target="_blank" rel="noopener">www.youtube.com</a> 来解释正向代理与反向代理。</p>
-<p>1）自己搭梯子或者找代理服务器。</p>
-<p>2）系统设置代理，windows在<code>连接</code>-<code>局域网设置</code>-<code>代理服务器</code>中配置代理服务器地址及端口。如 <code>proxy.xxx.com 8080</code></p>
-<p>此时，访问 <code>youtube.com</code>，请求首先会发送给代理服务器（<code>正向代理</code>），代理服务器再将请求发送给<code>youtube.com</code>（<code>反向代理</code>）,并接收youtube的响应放在代理服务器上，之后你从代理服务器拿走响应，返回给自己浏览器。</p>
-<p>代理服务器访问<code>youtube.com</code>，即是访问反向代理服务器。反向代理服务器通过<code>负载均衡</code>等策略从真实的服务器获取响应（从静态代理服务器返回js/css等静态资源，从动态服务器返回后台数据）。</p>
-<p><strong>3）nginx反向代理</strong></p>
-<pre><code> server {  
-    listen       80;                                                         
-    server_name  localhost;                                               
+<h2 id="三-跨域通信-JSONP-amp-CORS"><a href="#三-跨域通信-JSONP-amp-CORS" class="headerlink" title="三. 跨域通信 JSONP &amp; CORS"></a>三. 跨域通信 JSONP &amp; CORS</h2><h4 id="JsonP"><a href="#JsonP" class="headerlink" title="JsonP"></a>JsonP</h4><p><code>JSONP</code>是服务器与客户端跨源通信的常用方法。它的基本思想是，网页通过添加一个<code>&lt;script&gt;</code>元素，向服务器请求JSON数据，这种做法不受同源政策限制；服务器收到请求后，将数据放在一个指定名字的回调函数里传回来。<code>JsonP</code>只支持<code>GET</code>请求。</p>
+<pre><code>function addScriptTag(src) {
+    var script = document.createElement(&apos;script&apos;);
+    script.setAttribute(&quot;type&quot;,&quot;text/javascript&quot;);
+    script.src = src;
+    document.body.appendChild(script);
+}
+// 跨域调用，指定回调方法名
+window.onload = function () {
+    addScriptTag(&apos;http://example.com/ip?callback=foo&apos;); 
+}
+// 返回结果
+function foo(data) {
+    console.log(&apos;Your public IP address is: &apos; + data.ip);
+};
+</code></pre><h5 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h5><p><code>CORS</code>是一个<code>W3C</code>标准，全称是”跨域资源共享”（Cross-origin resource sharing）。它允许浏览器向跨源服务器，发出<code>XMLHttpRequest</code>请求，从而克服了<code>AJAX</code>只能同源使用的限制。</p>
+<p><code>CORS</code>需要浏览器和服务器同时支持。目前，所有浏览器都支持该功能。整个<code>CORS</code>通信过程，都是浏览器自动完成，不需要用户参与。对于开发者来说，<code>CORS</code>通信与同源的<code>AJAX</code>通信没有差别，代码完全一样。浏览器一旦发现<code>AJAX</code>请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。</p>
+<p>实现<code>CORS</code>通信的关键是服务器。只要服务器实现了<code>CORS</code>接口，就可以跨源通信。在Java Web中，服务器通过实现<code>Filter</code>支持CORS。</p>
+<pre><code>public class CORSFilter implements Filter {
 
-    # 反向代理服务器
-    location / {
-        proxy_pass http://localhost:8080;
-    }
-
-    # 图片静态服务器
-    location ~ \.(gif|jpg|png)$ {
-        root F:\staticResource;
-    }
-}
-</code></pre><h4 id="3-3-负载均衡"><a href="#3-3-负载均衡" class="headerlink" title="3.3 负载均衡"></a>3.3 负载均衡</h4><p>nginx反向代理可以将客户端的请求分发给多个服务端，实现服务端的负载均衡。</p>
-<pre><code>upstream server-list {
-    server 192.168.20.1:8080;
-    server 192.168.20.2:8080;
-}
-server {
-    listen 80;
-    server_name localhost;
-    location / {
-        proxy_pass http://server-list;
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+            throws IOException, ServletException {
+        HttpServletResponse response = (HttpServletResponse)response;
+        // 允许跨域访问的origin domain
+        response.setHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+        response.setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;POST, GET, OPTIONS, DELETE&quot;);
+        response.setHeader(&quot;Access-Control-Max-Age&quot;, &quot;3600&quot;);
+        response.setHeader(&quot;Access-Control-Allow-Headers&quot;, &quot;x-requested-with&quot;);
+        chain.doFilter(request, response);
     }
 }
-</code></pre><p>负载均衡策略：</p>
-<ol>
-<li><p>RR<br>每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除；如上面server-list配置。</p>
-</li>
-<li><p>权重</p>
-<pre><code>upstream server-list {
-    server 192.168.20.1:8080 weight=9;
-    server 192.168.20.2:8080 weight=1;
-}
-</code></pre></li>
-<li><p>ip_hash<br>上面两种负载均衡的策略会有一个问题，一个用户的多次请求可能会在不同的服务器中，这时候session如果没有在各个服务器之前同步，会造成鉴权等一系列问题。<br>ip-hash负载均衡策略会按照请求的ip hash来分配服务器，所以一个用户固定访问一台服务器。</p>
-<pre><code>upstream server-list {
-    ip_hash;
-    server 192.168.20.1:8080;
-    server 192.168.20.2:8080;
-}
-</code></pre></li>
-<li><p>fair（第三方）<br>按后端服务器的响应时间来分配请求，响应时间短的优先分配。</p>
-<pre><code>upstream server-list { 
-    fair; 
-    server 192.168.20.1:8080;
-    server 192.168.20.2:8080;
-}
-</code></pre></li>
-<li><p>url_hash（第三方）<br>按访问url的hash结果来分配请求，使每个url定向到同一个后端服务器，后端服务器为缓存时比较有效。 在upstream中加入hash语句，server语句中不能写入weight等其他的参数，hash_method是使用的hash算法</p>
-<pre><code>upstream backend { 
-    hash $request_uri; 
-    hash_method crc32; 
-    server localhost:8080;
-    server localhost:8081;
-} 
-</code></pre></li>
-</ol>
-<h4 id="3-4-虚拟主机"><a href="#3-4-虚拟主机" class="headerlink" title="3.4 虚拟主机"></a>3.4 虚拟主机</h4><p>有些小网站需要节省成本，可以把多个网站部署在同一个服务器上，分别对应同一个ip的不同端口。两个网站访问互不影响，就像访问两个服务器一样，所以叫虚拟主机;虚拟主机的原理是通过HTTP请求头中的Host是否匹配server_name来实现的。</p>
-<pre><code>server {
-    listen 80;
-    server_name www.a.com;
-    location / {
-        proxy_pass http://localhost:8080;
-    }
-}
-
-server {
-    listen 80;
-    server_name www.b.com;
-    location / {
-        proxy_pass http://localhost:8081;
-    }
-}
-</code></pre><p>以上是nginx的简单入门，后续深入了解nginx在实际生产中的应用。</p>
+</code></pre><hr>
+<p>Reference:<br><a href="http://javascript.info/cross-window-communication" target="_blank" rel="noopener">Cross-window communication</a><br><a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target="_blank" rel="noopener">浏览器同源政策及其规避方法</a><br><a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target="_blank" rel="noopener">跨域资源共享 CORS 详解</a></p>
 
       
     </div>
@@ -563,7 +475,9 @@ server {
       
         <div class="post-tags">
           
-            <a href="/tags/nginx/" rel="tag"># nginx</a>
+            <a href="/tags/iframe/" rel="tag"># iframe</a>
+          
+            <a href="/tags/浏览器同源/" rel="tag"># 浏览器同源</a>
           
         </div>
       
@@ -576,8 +490,8 @@ server {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/05/2018-04-05清明/" rel="next" title="清明时间雨纷纷">
-                <i class="fa fa-chevron-left"></i> 清明时间雨纷纷
+              <a href="/2018/05/06/2018-5-6 Maven/" rel="next" title="Maven 简单入门">
+                <i class="fa fa-chevron-left"></i> Maven 简单入门
               </a>
             
           </div>
@@ -585,10 +499,6 @@ server {
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/18/2018-4-18 API 网关/" rel="prev" title="API 网关">
-                API 网关 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -729,7 +639,7 @@ server {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-nginx-windows-安装"><span class="nav-number">1.</span> <span class="nav-text">1. nginx windows 安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-nginx-常用命令"><span class="nav-number">2.</span> <span class="nav-text">2. nginx 常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-nginx-常见用途"><span class="nav-number">3.</span> <span class="nav-text">3. nginx 常见用途</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-静态HTTP服务器"><span class="nav-number">3.1.</span> <span class="nav-text">3.1. 静态HTTP服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-反向代理服务器"><span class="nav-number">3.2.</span> <span class="nav-text">3.2. 反向代理服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-负载均衡"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 负载均衡</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-虚拟主机"><span class="nav-number">3.4.</span> <span class="nav-text">3.4 虚拟主机</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-浏览器同源策略"><span class="nav-number">1.</span> <span class="nav-text">一. 浏览器同源策略</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#same-origin"><span class="nav-number">1.0.1.</span> <span class="nav-text">same origin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#same-origin-policy-limitations"><span class="nav-number">1.0.2.</span> <span class="nav-text">same origin policy limitations</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-iframe-cross-window-messaging"><span class="nav-number">2.</span> <span class="nav-text">二. iframe cross-window messaging</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#postMessage"><span class="nav-number">2.0.1.</span> <span class="nav-text">postMessage</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#onmessage"><span class="nav-number">2.0.2.</span> <span class="nav-text">onmessage</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-跨域通信-JSONP-amp-CORS"><span class="nav-number">3.</span> <span class="nav-text">三. 跨域通信 JSONP &amp; CORS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#JsonP"><span class="nav-number">3.0.1.</span> <span class="nav-text">JsonP</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#CORS"><span class="nav-number">3.0.1.1.</span> <span class="nav-text">CORS</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -910,7 +820,7 @@ server {
 		_hcwp.push({widget:"Bloggerstream", widget_id: 102996, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/04/09/2018-4-9 Nginx简单入门/"});
+		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/05/07/2018-5-7 浏览器同源/"});
 		
 
 		(function() {
