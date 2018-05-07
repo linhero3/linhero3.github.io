@@ -312,6 +312,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Front-End/" itemprop="url" rel="index">
+                    <span itemprop="name">Front-End</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -354,32 +376,26 @@
         
           
             <h2 id="一-浏览器同源策略"><a href="#一-浏览器同源策略" class="headerlink" title="一. 浏览器同源策略"></a>一. 浏览器同源策略</h2><h4 id="same-origin"><a href="#same-origin" class="headerlink" title="same origin"></a>same origin</h4><p>Two URLs are said to have the “same origin” if they have the same <code>protocol</code>, <code>domain</code> and <code>port</code>.The “Same Origin” (same site) policy limits access of windows and frame to each other.</p>
-<p>如果<code>window</code>一级域名相同，如 <code>site.com</code>, <code>app.site.com</code>, <code>weapp.site.com</code>，可以通过设置所有窗口的<code>document.domain</code>，来认为这些域名是同源的</p>
+<p>如果两个<code>window</code>的一级域名相同，如 <code>site.com</code>, <code>app.site.com</code>, <code>weapp.site.com</code>，可以通过设置所有窗口的<code>document.domain</code>，来认为这些域名是同源的。</p>
 <pre><code>document.domain = &apos;site.com&apos;;
 </code></pre><h4 id="same-origin-policy-limitations"><a href="#same-origin-policy-limitations" class="headerlink" title="same origin policy limitations"></a>same origin policy limitations</h4><ul>
 <li><code>Cookie</code>、<code>LocalStorage</code>、<code>IndexDB</code> 无法读取</li>
 <li><code>DOM</code>无法获得</li>
 <li><code>AJAX</code>请求不能发送</li>
 </ul>
-<p>通过<code>iframe</code>或者<code>popup</code>获得的另一个<code>window</code>的引用，如果两个<code>window</code>是同源的，访问不收限制。如果是非同源的，只能修改它的<code>location</code>（不能读取）；只能获得<code>iframe</code>的窗口引用（<code>iframe.contentWindow</code>），不能读取窗口引用的属性。</p>
-<h2 id="二-iframe-cross-window-messaging"><a href="#二-iframe-cross-window-messaging" class="headerlink" title="二. iframe cross-window messaging"></a>二. iframe cross-window messaging</h2><p>对<code>iframe</code>来说，受限于同源政策，各<code>window</code>之间一般通过<code>window.postMessage</code>进行消息传递。</p>
-<p>For iframes, we can access parent/children windows using:</p>
-<ul>
-<li><code>window.frames</code> – a collection of nested window objects,</li>
-<li><code>window.parent</code>, <code>window.to</code>p are the references to parent and top windows,</li>
-<li><code>iframe.contentWindow</code> is the window inside an <code>&lt;iframe&gt;</code> tag.</li>
-</ul>
-<p>If windows share the <code>same origin</code> (host, port, protocol), then windows can do whatever they want with each other. Otherwise, only possible actions are:</p>
+<h2 id="二-iframe-cross-window-messaging"><a href="#二-iframe-cross-window-messaging" class="headerlink" title="二. iframe cross-window messaging"></a>二. iframe cross-window messaging</h2><p>对<code>iframe</code>来说，如果窗口不同源，各<code>window</code>之间一般通过<code>window.postMessage</code>进行消息传递。当然，同源窗口也可以通过该接口进行通信。如下是获取iframe窗口的方法：</p>
+<blockquote>
+<p> <code>window.frames</code> – a collection of nested window objects,<br> <code>window.parent</code>, <code>window.top</code> are the references to parent and top windows,<br> <code>iframe.contentWindow</code> is the window inside an <code>&lt;iframe&gt;</code> tag.</p>
+</blockquote>
+<p>如果窗口间是不同源的，只能进行如下动作：</p>
 <ul>
 <li>Change the location of another window (write-only access).</li>
 <li><p>Post a message(<code>window.postMessage</code>) to it.</p>
 </li>
 <li><h4 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h4><p>The window that wants to send a message calls postMessage method of the receiving window. In other words, if we want to send the message to win, we should call <code>win</code>.postMessage(<code>data</code>, <code>targetOrigin</code>).</p>
 <blockquote>
-<p><code>win</code> 目标窗口<br><code>data</code> 发送数据<br><code>targetOrigin</code> 目标origin(协议 + 域名 + 端口)；也可为<code>*</code>，表示不限制域名。</p>
+<p><code>**win**</code> 目标窗口<br><code>**data**</code> 发送数据<br><code>**targetOrigin**</code> 目标origin(协议 + 域名 + 端口)；也可为<code>*</code>，表示不限制域名。</p>
 </blockquote>
-<p>  <strong><code>data</code></strong><br>  The data to send. Can be any object, the data is cloned using the “structured cloning algorithm”. IE supports only strings, so we should JSON.stringify complex objects to support that browser.</p>
-<p>  <strong><code>targetOrigin</code></strong><br>  Specifies the origin for the target window, so that only a window from the given origin will get the message.<br>  The targetOrigin is a safety measure. Remember, if the target window comes from another origin, we can’t read it’s location. So we can’t be sure which site is open in the intended window right now: the user could navigate away.</p>
 <p>  <strong><code>Specifying targetOrigin ensures that the window only receives the data if it’s still at that site. Good when the data is sensitive.</code></strong></p>
 <p>  For instance, here win will only receive the message if it has a document from the origin <a href="http://example.com" target="_blank" rel="noopener">http://example.com</a>:</p>
 <pre><code>&lt;iframe src=&quot;http://example.com&quot; name=&quot;example&quot;&gt;
@@ -388,19 +404,19 @@
     let win = window.frames.example;
     win.postMessage(&quot;message&quot;, &quot;http://example.com&quot;);
 &lt;/script&gt;
-</code></pre><p>  If we don’t want that check, we can set targetOrigin to *.</p>
-</li>
-<li><h4 id="onmessage"><a href="#onmessage" class="headerlink" title="onmessage"></a>onmessage</h4><p>  To receive a message, the target window should have a handler on the message event. It triggers when postMessage is called (and targetOrigin check is successful).</p>
-<p>  The event object has special properties:</p>
-<p>  <strong><code>data</code></strong><br>  The data from postMessage.<br>  <strong><code>origin</code></strong><br>  The origin of the sender, for instance <a href="http://javascript.info" target="_blank" rel="noopener">http://javascript.info</a>.<br>  <strong><code>source</code></strong><br>  The reference to the sender window. <strong><code>We can immediately postMessage back if we want</code></strong>.</p>
-<p>  To assign that handler, we should use addEventListener, a short syntax window.onmessage does not work.</p>
+</code></pre></li>
+<li><h4 id="onmessage"><a href="#onmessage" class="headerlink" title="onmessage"></a>onmessage</h4><p>  To receive a message, the target window should have a handler on the message event. It triggers when postMessage is called (and targetOrigin check is successful). To assign that handler, we should use <code>addEventListener</code>, a short syntax <code>window.onmessage</code> does not work.</p>
 <pre><code>window.addEventListener(&quot;message&quot;, function(event) {
 if (event.origin != &apos;http://javascript.info&apos;) { 
     event.source.postMessage(&apos;&apos;,&apos;http://sub.javascript.info&apos;);
 }
 alert( &quot;received: &quot; + event.data );
 });
-</code></pre><p>  <strong>There’s no delay</strong><br>  There’s totally no delay between postMessage and the message event. That happens synchronously, even faster than setTimeout(…,0).</p>
+</code></pre><p>  The <code>event object</code> has special properties:</p>
+<blockquote>
+<p><strong><code>data</code></strong> The data from postMessage.<br><strong><code>origin</code></strong> The origin of the sender, for instance <a href="http://javascript.info" target="_blank" rel="noopener">http://javascript.info</a>.<br><strong><code>source</code></strong> The reference to the sender window. <strong><code>We can immediately postMessage back if we want</code></strong>.</p>
+</blockquote>
+<p>  <em>There’s totally no delay between postMessage and the message event. That happens synchronously, even faster than setTimeout(…,0).</em></p>
 </li>
 </ul>
 <h2 id="三-跨域通信-JSONP-amp-CORS"><a href="#三-跨域通信-JSONP-amp-CORS" class="headerlink" title="三. 跨域通信 JSONP &amp; CORS"></a>三. 跨域通信 JSONP &amp; CORS</h2><h4 id="JsonP"><a href="#JsonP" class="headerlink" title="JsonP"></a>JsonP</h4><p><code>JSONP</code>是服务器与客户端跨源通信的常用方法。它的基本思想是，网页通过添加一个<code>&lt;script&gt;</code>元素，向服务器请求JSON数据，这种做法不受同源政策限制；服务器收到请求后，将数据放在一个指定名字的回调函数里传回来。<code>JsonP</code>只支持<code>GET</code>请求。</p>
@@ -1967,7 +1983,7 @@ _auth=ZGVwbG95OmRlcGxveQ
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
