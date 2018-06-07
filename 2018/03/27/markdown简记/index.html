@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="markdown," />
 
 
 
@@ -79,21 +79,20 @@
 
 
 
-<meta name="description" content="一. JWT 简介JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties. JWT是一个标准，用来两方之间安全传输数据。JWT传输的数据其实就是Json web token字符串。所以广义上，JWT是一个标准的名称；狭义上，">
+<meta name="description" content="Why Markdown 易读，易写，纯文本，极简主义 兼容HTML 跨平台 优雅">
+<meta name="keywords" content="markdown">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JSON Web Tokens">
-<meta property="og:url" content="http://dengzhe.xyz/2018/06/07/2018-6-7 JWT/index.html">
+<meta property="og:title" content="Markdown语法简记">
+<meta property="og:url" content="http://dengzhe.xyz/2018/03/27/Markdown简记/index.html">
 <meta property="og:site_name" content="还没想好">
-<meta property="og:description" content="一. JWT 简介JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties. JWT是一个标准，用来两方之间安全传输数据。JWT传输的数据其实就是Json web token字符串。所以广义上，JWT是一个标准的名称；狭义上，">
+<meta property="og:description" content="Why Markdown 易读，易写，纯文本，极简主义 兼容HTML 跨平台 优雅">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://dengzhe.xyz/images/jwt.jpg">
-<meta property="og:image" content="http://dengzhe.xyz/images/微服务网关鉴权.png">
-<meta property="og:image" content="http://dengzhe.xyz/images/用户鉴权.png">
-<meta property="og:updated_time" content="2018-06-07T15:54:47.094Z">
+<meta property="og:image" content="https://dengzhe.xyz/images/樱园.jpg">
+<meta property="og:updated_time" content="2018-05-06T16:44:50.632Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JSON Web Tokens">
-<meta name="twitter:description" content="一. JWT 简介JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties. JWT是一个标准，用来两方之间安全传输数据。JWT传输的数据其实就是Json web token字符串。所以广义上，JWT是一个标准的名称；狭义上，">
-<meta name="twitter:image" content="http://dengzhe.xyz/images/jwt.jpg">
+<meta name="twitter:title" content="Markdown语法简记">
+<meta name="twitter:description" content="Why Markdown 易读，易写，纯文本，极简主义 兼容HTML 跨平台 优雅">
+<meta name="twitter:image" content="https://dengzhe.xyz/images/樱园.jpg">
 
 
 
@@ -123,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://dengzhe.xyz/2018/06/07/2018-6-7 JWT/"/>
+  <link rel="canonical" href="http://dengzhe.xyz/2018/03/27/Markdown简记/"/>
 
 
 
 
 
-  <title>JSON Web Tokens | 还没想好</title>
+  <title>Markdown语法简记 | 还没想好</title>
   
 
 
@@ -274,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/06/07/2018-6-7 JWT/">
+    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/03/27/Markdown简记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="烂笔头">
@@ -291,7 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JSON Web Tokens</h1>
+          <h1 class="post-title" itemprop="name headline">Markdown语法简记</h1>
         
 
         <div class="post-meta">
@@ -303,8 +302,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-07T19:32:35+08:00">
-                2018-06-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-27T22:27:13+08:00">
+                2018-03-27
               </time>
             
 
@@ -326,8 +325,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Front-End/" itemprop="url" rel="index">
-                    <span itemprop="name">Front-End</span>
+                  <a href="/categories/语言/" itemprop="url" rel="index">
+                    <span itemprop="name">语言</span>
                   </a>
                 </span>
 
@@ -345,8 +344,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/06/07/2018-6-7 JWT/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2018/06/07/2018-6-7 JWT/" itemprop="commentsCount"></span>
+                <a href="/2018/03/27/Markdown简记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/03/27/Markdown简记/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -375,53 +374,55 @@
       
 
       
-        <h2 id="一-JWT-简介"><a href="#一-JWT-简介" class="headerlink" title="一. JWT 简介"></a>一. JWT 简介</h2><p><code>JSON Web Tokens</code> are an open, industry standard <code>RFC 7519</code> method for representing claims securely between two parties.</p>
-<p><code>JWT</code>是一个标准，用来两方之间安全传输数据。<code>JWT</code>传输的数据其实就是<code>Json web token</code>字符串。所以广义上，<code>JWT</code>是一个标准的名称；狭义上，<code>JWT</code>指的就是用来传递的那个token字符串。这个串有两个特点： </p>
-<blockquote>
-<p>紧凑：<code>JWT</code>字符串很小，能通过http请求参数、请求体以及http header的方式来传递；<br>自包含：<code>JWT</code>字符串可包含很多信息，如用户的<code>ID</code>、<code>角色</code>等，拿到该串，即可得到这些信息。</p>
-</blockquote>
+        <h2 id="Why-Markdown"><a href="#Why-Markdown" class="headerlink" title="Why Markdown"></a>Why Markdown</h2><ul>
+<li>易读，易写，纯文本，极简主义</li>
+<li>兼容HTML</li>
+<li>跨平台</li>
+<li>优雅</li>
+</ul>
 <a id="more"></a>
-<h2 id="二-JWT数据结构、签发、验证"><a href="#二-JWT数据结构、签发、验证" class="headerlink" title="二. JWT数据结构、签发、验证"></a>二. JWT数据结构、签发、验证</h2><h4 id="2-1-JWT-数据结构及签发"><a href="#2-1-JWT-数据结构及签发" class="headerlink" title="2.1 JWT 数据结构及签发"></a>2.1 JWT 数据结构及签发</h4><p>一个JWT三部分组成：<code>header</code>（头部）、<code>payload</code>（载荷）和<code>signature</code>（签名）。这三个部分在JWT里面分别对应英文句号分隔出来的三个串。如下图：</p>
-<p><a href="https://jwt.io/" target="_blank" rel="noopener">https://jwt.io/</a><br><img src="/images/jwt.jpg" title="JWT数据结构"></p>
-<p><strong>1. <code>header</code></strong></p>
+<h2 id="How-to-write"><a href="#How-to-write" class="headerlink" title="How to write"></a>How to write</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h3><p>两种形式：</p>
+<p>1.1 使用====和—-标记一二级标题</p>
 <blockquote>
-<p><code>typ</code>: 标识该字符串是一个<code>jwt</code>字符串<br><code>alg</code>: 说明该jwt签发时使用的签名算法。</p>
-</blockquote>
-<pre><code>{
-    &quot;typ&quot;:&quot;JWT&quot;;
-    &quot;alg&quot;:&quot;HS256&quot;
-}
-</code></pre><p><strong>2. <code>payload</code></strong><br>payload用来承载要传递的数据，它的json结构实际上是对JWT要传递的数据的一组声明，这些声明被JWT标准称为claims，它的一个“属性值对”其实就是一个claim，每一个claim的都代表特定的含义和作用。</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
+<p>1.2 使用#，标记1-6级标题。</p>
 <blockquote>
-<p><code>sub</code>(subject)：代表这个JWT的主体，即它的所有人；<br><code>iat</code>(issued at)：是一个时间戳，代表这个JWT的签发时间；<br><code>iss</code>(issuser)：代表这个JWT的签发主体；<br><code>aud</code>(audience)：代表这个JWT的接收对象；<br><code>exp</code>(expiration time)：是一个时间戳，代表这个JWT的过期时间；<br><code>nbf</code>(not before)：是一个时间戳，代表这个JWT生效的开始时间，意味着在这个时间之前验证JWT是会失败的；<br><code>jti</code>(jwt id)：是JWT的唯一标识。</p>
-</blockquote>
-<p><strong>3. <code>signature</code></strong><br><code>signature</code>生成过程：<code>用header里指定的签名算法，用私钥对header和payload的baseurl64编码进行加密</code>。<br><code>HS256</code>其实包含的是两种算法：<code>HMAC</code>算法和<code>SHA256</code>算法，前者用于生成摘要，后者用于对摘要进行数字签名。这两个算法也可以用<code>HMACSHA256</code>来统称。</p>
-<pre><code>HMACSHA256(
-    // @param1: header和payload的base64url编码，并用&apos;.&apos;拼接
-    base64UrlEncode(header) + &quot;.&quot; + base64UrlEncode(payload),
-    // @param2: 签名私钥
-    your-256-bit-secret
-) 
-</code></pre><p>jwt签发在服务器端完成，签名的私钥要安全保存，否则就可以伪造jwt。并且jwt的header和payload只是编码，没有加密，所以不能传递诸如密码类似的敏感信息。</p>
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
+<h3 id="2-段落"><a href="#2-段落" class="headerlink" title="2. 段落"></a>2. 段落</h3><p>2.1 前后有空行<br>2.2 段内强制换行-&gt; 两个以上空格+回车</p>
+<h3 id="3-区块引用"><a href="#3-区块引用" class="headerlink" title="3. 区块引用"></a>3. 区块引用</h3><p>使用符号&gt;</p>
 <blockquote>
-<p><code>在线base64编码</code>：<a href="http://www1.tc711.com/tool/BASE64.htm" target="_blank" rel="noopener">http://www1.tc711.com/tool/BASE64.htm</a><br><code>在线签名算法计算</code>：<a href="https://1024tools.com/hmac" target="_blank" rel="noopener">https://1024tools.com/hmac</a></p>
-</blockquote>
-<h4 id="2-2-JWT-验证"><a href="#2-2-JWT-验证" class="headerlink" title="2.2 JWT 验证"></a>2.2 JWT 验证</h4><p>JWT由服务端签发以后，客户端的下次请求会带上JWT，服务端这个时候需要对JWT进行验证。<br>JWT的验证主要包括<strong>签名验证</strong>和<strong>payload里面各个标准claim的验证</strong>。只有验证成功的JWT，才能当做有效的凭证来使用。</p>
-<p><strong>1. <code>签名验证</code></strong><br>对header做base64url解码，知道JWT的签名算法。用这个算法，再次用同样的逻辑对header和payload串签名，通过比较签名结果和jwt串的第三部分是否相同来判断jwt有没有被篡改过。</p>
-<p><strong>2. <code>payload的claim验证</code></strong></p>
+<p>区块引用</p>
 <blockquote>
-<p><code>iss</code>(issuser)：验证是否跟签发时相同；<br><code>sub</code>(subject)：验证是否跟签发时相同；<br><code>aud</code>(audience)：验证是否跟签发时相同；<br><code>exp</code>(expiration time)：验证是否超过claim指定的时间；<br><code>nbf</code>(not before)：验证是否小于claim指定的时间；<br><code>jti</code>(jwt id)：验证是否跟签发时相同；</p>
+<p>嵌套引用</p>
 </blockquote>
-<p>需要注意的是，在验证一个JWT的时候，签名认证是每个实现库都会自动做的，但是payload的认证是由使用者来决定的。因为JWT里面可能不会包含任何一个标准的claim，所以它不会自动去验证这些claim。<br>以登录认证来说，在签发JWT的时候，完全可以只用<code>sub</code>跟<code>exp</code>两个claim，用sub存储用户的id，用exp存储它本次登录之后的过期时间，然后在验证的时候仅验证exp这个claim，以实现会话的有效期管理。</p>
-<h2 id="三-JWT应用"><a href="#三-JWT应用" class="headerlink" title="三. JWT应用"></a>三. JWT应用</h2><ol>
-<li>微服务网关鉴权</li>
-</ol>
-<img src="/images/微服务网关鉴权.png" title="微服务网关鉴权">
+</blockquote>
+<h3 id="4-代码区块"><a href="#4-代码区块" class="headerlink" title="4. 代码区块"></a>4. 代码区块</h3><p>每行四个空格或者一个Tab</p>
+<pre><code>console.log(&quot;this is code area&quot;)
+</code></pre><h3 id="5-强调"><a href="#5-强调" class="headerlink" title="5. 强调"></a>5. 强调</h3><p>强调内容两侧加上*或者_，*或_表示斜体，**或__表示粗体。  </p>
+<blockquote>
+<p><em>斜体</em>，_斜体_<br><strong>粗体</strong>，<strong>粗体</strong></p>
+</blockquote>
+<h3 id="6-列表"><a href="#6-列表" class="headerlink" title="6. 列表"></a>6. 列表</h3><blockquote>
+<p>+、- 标记无序列表<br>数字+.标记有序列表</p>
+</blockquote>
+<p>+无序列表<br>-无序列表</p>
 <ol>
-<li>用户鉴权</li>
+<li>有序列表</li>
+<li>有序列表</li>
 </ol>
-<img src="/images/用户鉴权.png" title="用户鉴权">
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://jwt.io/" target="_blank" rel="noopener">https://jwt.io/</a><br><a href="http://www.cnblogs.com/lyzg/p/6028341.html" target="_blank" rel="noopener">http://www.cnblogs.com/lyzg/p/6028341.html</a></p>
+<h3 id="7-分隔线"><a href="#7-分隔线" class="headerlink" title="7. 分隔线"></a>7. 分隔线</h3><p>三个以上 - 或者 _ 或者 *</p>
+<hr>
+<h3 id="8-链接"><a href="#8-链接" class="headerlink" title="8. 链接"></a>8. 链接</h3><p>[链接](地址 “鼠标悬浮文字”)</p>
+<blockquote>
+<p><a href="https://dengzhe.xyz" title="我的链接">我的链接</a></p>
+</blockquote>
+<h3 id="9-图片"><a href="#9-图片" class="headerlink" title="9. 图片"></a>9. 图片</h3><p>![链接](地址 “鼠标悬浮文字”)<br><img src="https://dengzhe.xyz/images/樱园.jpg" alt="图片" title="樱园"></p>
+<h3 id="10-符号’-’"><a href="#10-符号’-’" class="headerlink" title="10. 符号’`’"></a>10. 符号’`’</h3><p>标记作用  </p>
+<blockquote>
+<p><code>small code area</code></p>
+</blockquote>
+<h3 id="11-反斜杠"><a href="#11-反斜杠" class="headerlink" title="11. 反斜杠\"></a>11. 反斜杠\</h3><p>相当于转义</p>
+<p>>转义区块引用附’&gt;’</p>
 
       
     </div>
@@ -461,6 +462,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/markdown/" rel="tag"># markdown</a>
+          
+        </div>
+      
 
       
       
@@ -470,8 +477,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/07/2018-5-7 浏览器同源/" rel="next" title="浏览器同源策略及跨域通信">
-                <i class="fa fa-chevron-left"></i> 浏览器同源策略及跨域通信
+              <a href="/2018/03/24/三月的尾巴/" rel="next" title="三月快到尾巴">
+                <i class="fa fa-chevron-left"></i> 三月快到尾巴
               </a>
             
           </div>
@@ -479,6 +486,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/05/2018-04-05清明/" rel="prev" title="清明时间雨纷纷">
+                清明时间雨纷纷 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -619,7 +630,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-JWT-简介"><span class="nav-number">1.</span> <span class="nav-text">一. JWT 简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-JWT数据结构、签发、验证"><span class="nav-number">2.</span> <span class="nav-text">二. JWT数据结构、签发、验证</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-JWT-数据结构及签发"><span class="nav-number">2.0.1.</span> <span class="nav-text">2.1 JWT 数据结构及签发</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-JWT-验证"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.2 JWT 验证</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-JWT应用"><span class="nav-number">3.</span> <span class="nav-text">三. JWT应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">4.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-Markdown"><span class="nav-number">1.</span> <span class="nav-text">Why Markdown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-write"><span class="nav-number">2.</span> <span class="nav-text">How to write</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-标题"><span class="nav-number">2.1.</span> <span class="nav-text">1. 标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题-1"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题-1"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-段落"><span class="nav-number">1.2.</span> <span class="nav-text">2. 段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-区块引用"><span class="nav-number">1.3.</span> <span class="nav-text">3. 区块引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-代码区块"><span class="nav-number">1.4.</span> <span class="nav-text">4. 代码区块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-强调"><span class="nav-number">1.5.</span> <span class="nav-text">5. 强调</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-列表"><span class="nav-number">1.6.</span> <span class="nav-text">6. 列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-分隔线"><span class="nav-number">1.7.</span> <span class="nav-text">7. 分隔线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-链接"><span class="nav-number">1.8.</span> <span class="nav-text">8. 链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-图片"><span class="nav-number">1.9.</span> <span class="nav-text">9. 图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-符号’-’"><span class="nav-number">1.10.</span> <span class="nav-text">10. 符号’`’</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-反斜杠"><span class="nav-number">1.11.</span> <span class="nav-text">11. 反斜杠\</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -800,7 +811,7 @@
 		_hcwp.push({widget:"Bloggerstream", widget_id: 102996, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/06/07/2018-6-7 JWT/"});
+		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/03/27/Markdown简记/"});
 		
 
 		(function() {
