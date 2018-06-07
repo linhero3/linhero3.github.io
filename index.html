@@ -270,6 +270,168 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/06/07/2018-6-7 JWT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="烂笔头">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="还没想好">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/07/2018-6-7 JWT/" itemprop="url">JWT</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-07T19:32:35+08:00">
+                2018-06-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Front-End/" itemprop="url" rel="index">
+                    <span itemprop="name">Front-End</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/07/2018-6-7 JWT/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/06/07/2018-6-7 JWT/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="一-JWT"><a href="#一-JWT" class="headerlink" title="一. JWT"></a>一. JWT</h2><p><code>JSON Web Tokens</code> are an open, industry standard <code>RFC 7519</code> method for representing claims securely between two parties.</p>
+<p><code>JWT</code>是一个标准，用来两方之间安全传输数据。<code>JWT</code>传输的数据其实就是<code>Json web token</code>字符串。所以广义上，<code>JWT</code>是一个标准的名称；狭义上，<code>JWT</code>指的就是用来传递的那个token字符串。这个串有两个特点： </p>
+<blockquote>
+<p>紧凑：指的是这个串很小，能通过url 参数，http 请求体以及http header的方式来传递；<br>自包含：这个串可以包含很多信息，比如用户的id、角色等，别人拿到这个串，就能拿到这些关键的业务信息。</p>
+</blockquote>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/07/2018-6-7 JWT/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/05/07/2018-5-7 浏览器同源/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -374,87 +536,17 @@
 
       
         
-          
-            <h2 id="一-浏览器同源策略"><a href="#一-浏览器同源策略" class="headerlink" title="一. 浏览器同源策略"></a>一. 浏览器同源策略</h2><h4 id="same-origin"><a href="#same-origin" class="headerlink" title="same origin"></a>same origin</h4><p>Two URLs are said to have the “same origin” if they have the same <code>protocol</code>, <code>domain</code> and <code>port</code>.The “Same Origin” (same site) policy limits access of windows and frame to each other.</p>
+          <h2 id="一-浏览器同源策略"><a href="#一-浏览器同源策略" class="headerlink" title="一. 浏览器同源策略"></a>一. 浏览器同源策略</h2><h4 id="same-origin"><a href="#same-origin" class="headerlink" title="same origin"></a>same origin</h4><p>Two URLs are said to have the “same origin” if they have the same <code>protocol</code>, <code>domain</code> and <code>port</code>.The “Same Origin” (same site) policy limits access of windows and frame to each other.</p>
 <p>如果两个<code>window</code>的一级域名相同，如 <code>site.com</code>, <code>app.site.com</code>, <code>weapp.site.com</code>，可以通过设置所有窗口的<code>document.domain</code>，来认为这些域名是同源的。</p>
 <pre><code>document.domain = &apos;site.com&apos;;
-</code></pre><h4 id="same-origin-policy-limitations"><a href="#same-origin-policy-limitations" class="headerlink" title="same origin policy limitations"></a>same origin policy limitations</h4><ul>
-<li><code>Cookie</code>、<code>LocalStorage</code>、<code>IndexDB</code> 无法读取</li>
-<li><code>DOM</code>无法获得</li>
-<li><code>AJAX</code>请求不能发送</li>
-</ul>
-<h2 id="二-iframe-cross-window-messaging"><a href="#二-iframe-cross-window-messaging" class="headerlink" title="二. iframe cross-window messaging"></a>二. iframe cross-window messaging</h2><p>对<code>iframe</code>来说，如果窗口不同源，各<code>window</code>之间一般通过<code>window.postMessage</code>进行消息传递。当然，同源窗口也可以通过该接口进行通信。如下是获取iframe窗口的方法：</p>
-<blockquote>
-<p> <code>window.frames</code> – a collection of nested window objects,<br> <code>window.parent</code>, <code>window.top</code> are the references to parent and top windows,<br> <code>iframe.contentWindow</code> is the window inside an <code>&lt;iframe&gt;</code> tag.</p>
-</blockquote>
-<p>如果窗口间是不同源的，只能进行如下动作：</p>
-<ul>
-<li>Change the location of another window (write-only access).</li>
-<li><p>Post a message(<code>window.postMessage</code>) to it.</p>
-</li>
-<li><h4 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h4><p>The window that wants to send a message calls postMessage method of the receiving window. In other words, if we want to send the message to win, we should call <code>win</code>.postMessage(<code>data</code>, <code>targetOrigin</code>).</p>
-<blockquote>
-<p><code>**win**</code> 目标窗口<br><code>**data**</code> 发送数据<br><code>**targetOrigin**</code> 目标origin(协议 + 域名 + 端口)；也可为<code>*</code>，表示不限制域名。</p>
-</blockquote>
-<p>  <strong><code>Specifying targetOrigin ensures that the window only receives the data if it’s still at that site. Good when the data is sensitive.</code></strong></p>
-<p>  For instance, here win will only receive the message if it has a document from the origin <a href="http://example.com" target="_blank" rel="noopener">http://example.com</a>:</p>
-<pre><code>&lt;iframe src=&quot;http://example.com&quot; name=&quot;example&quot;&gt;
-
-&lt;script&gt;
-    let win = window.frames.example;
-    win.postMessage(&quot;message&quot;, &quot;http://example.com&quot;);
-&lt;/script&gt;
-</code></pre></li>
-<li><h4 id="onmessage"><a href="#onmessage" class="headerlink" title="onmessage"></a>onmessage</h4><p>  To receive a message, the target window should have a handler on the message event. It triggers when postMessage is called (and targetOrigin check is successful). To assign that handler, we should use <code>addEventListener</code>, a short syntax <code>window.onmessage</code> does not work.</p>
-<pre><code>window.addEventListener(&quot;message&quot;, function(event) {
-if (event.origin != &apos;http://javascript.info&apos;) { 
-    event.source.postMessage(&apos;&apos;,&apos;http://sub.javascript.info&apos;);
-}
-alert( &quot;received: &quot; + event.data );
-});
-</code></pre><p>  The <code>event object</code> has special properties:</p>
-<blockquote>
-<p><strong><code>data</code></strong> The data from postMessage.<br><strong><code>origin</code></strong> The origin of the sender, for instance <a href="http://javascript.info" target="_blank" rel="noopener">http://javascript.info</a>.<br><strong><code>source</code></strong> The reference to the sender window. <strong><code>We can immediately postMessage back if we want</code></strong>.</p>
-</blockquote>
-<p>  <em>There’s totally no delay between postMessage and the message event. That happens synchronously, even faster than setTimeout(…,0).</em></p>
-</li>
-</ul>
-<h2 id="三-跨域通信-JSONP-amp-CORS"><a href="#三-跨域通信-JSONP-amp-CORS" class="headerlink" title="三. 跨域通信 JSONP &amp; CORS"></a>三. 跨域通信 JSONP &amp; CORS</h2><h4 id="JsonP"><a href="#JsonP" class="headerlink" title="JsonP"></a>JsonP</h4><p><code>JSONP</code>是服务器与客户端跨源通信的常用方法。它的基本思想是，网页通过添加一个<code>&lt;script&gt;</code>元素，向服务器请求JSON数据，这种做法不受同源政策限制；服务器收到请求后，将数据放在一个指定名字的回调函数里传回来。<code>JsonP</code>只支持<code>GET</code>请求。</p>
-<pre><code>function addScriptTag(src) {
-    var script = document.createElement(&apos;script&apos;);
-    script.setAttribute(&quot;type&quot;,&quot;text/javascript&quot;);
-    script.src = src;
-    document.body.appendChild(script);
-}
-// 跨域调用，指定回调方法名
-window.onload = function () {
-    addScriptTag(&apos;http://example.com/ip?callback=foo&apos;); 
-}
-// 返回结果
-function foo(data) {
-    console.log(&apos;Your public IP address is: &apos; + data.ip);
-};
-</code></pre><h5 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h5><p><code>CORS</code>是一个<code>W3C</code>标准，全称是”跨域资源共享”（Cross-origin resource sharing）。它允许浏览器向跨源服务器，发出<code>XMLHttpRequest</code>请求，从而克服了<code>AJAX</code>只能同源使用的限制。</p>
-<p><code>CORS</code>需要浏览器和服务器同时支持。目前，所有浏览器都支持该功能。整个<code>CORS</code>通信过程，都是浏览器自动完成，不需要用户参与。对于开发者来说，<code>CORS</code>通信与同源的<code>AJAX</code>通信没有差别，代码完全一样。浏览器一旦发现<code>AJAX</code>请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。</p>
-<p>实现<code>CORS</code>通信的关键是服务器。只要服务器实现了<code>CORS</code>接口，就可以跨源通信。在Java Web中，服务器通过实现<code>Filter</code>支持CORS。</p>
-<pre><code>public class CORSFilter implements Filter {
-
-    @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws IOException, ServletException {
-        HttpServletResponse response = (HttpServletResponse)response;
-        // 允许跨域访问的origin domain
-        response.setHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
-        response.setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;POST, GET, OPTIONS, DELETE&quot;);
-        response.setHeader(&quot;Access-Control-Max-Age&quot;, &quot;3600&quot;);
-        response.setHeader(&quot;Access-Control-Allow-Headers&quot;, &quot;x-requested-with&quot;);
-        chain.doFilter(request, response);
-    }
-}
-</code></pre><hr>
-<p>Reference:<br><a href="http://javascript.info/cross-window-communication" target="_blank" rel="noopener">Cross-window communication</a><br><a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target="_blank" rel="noopener">浏览器同源政策及其规避方法</a><br><a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target="_blank" rel="noopener">跨域资源共享 CORS 详解</a></p>
-
-          
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/07/2018-5-7 浏览器同源/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -583,181 +675,20 @@ function foo(data) {
 
       
         
-          
-            <h2 id="一-Maven简介"><a href="#一-Maven简介" class="headerlink" title="一. Maven简介"></a>一. Maven简介</h2><p>用maven来管理项目目前已是java web领域的共识。maven，一个开源项目管理工具，采用pom(Project Object Model)的概念，将所有配置信息定义在pom.xml中。<br>简单来说，maven有如下优点：</p>
+          <h2 id="一-Maven简介"><a href="#一-Maven简介" class="headerlink" title="一. Maven简介"></a>一. Maven简介</h2><p>用maven来管理项目目前已是java web领域的共识。maven，一个开源项目管理工具，采用pom(Project Object Model)的概念，将所有配置信息定义在pom.xml中。<br>简单来说，maven有如下优点：</p>
 <ul>
 <li>简化项目依赖管理，Jar通过坐标即可引入，易于上手。</li>
 <li>统一的目录结构，统一的软件构建阶段。</li>
 <li>仓库保存构建，便于协同开发。</li>
 <li>多插件支持，拓展容易。</li>
 </ul>
-<p>如下是maven项目结构：</p>
-<p>|-rootdir                   #pom/子目录<br>|—-src<br>|——–main/java              #java源码<br>|——–main/resources         #资源文件<br>|——–test/java              #test代码<br>|——–test/resources         #test资源文件<br>|—-target                   #jar/ear包<br>|—-target/classes           #编译后的文件(class)</p>
-<h4 id="maven-安装"><a href="#maven-安装" class="headerlink" title="maven 安装"></a>maven 安装</h4><p>maven安装比较简单，下载解压设置系统路径即可。如下是maven目录结构：</p>
-<blockquote>
-<p>bin: maven可执行命令<br>boot: 类加载框架包<br>conf: maven配置文件settings.xml<br>lib: maven运行时java类库</p>
-</blockquote>
-<p>maven默认本地仓库: <code>user/.m2/repository</code><br>maven默认远程仓库地址: <a href="https://repo.maven.apache.org/maven2" target="_blank" rel="noopener">https://repo.maven.apache.org/maven2</a>，配置在lib目录的maven-modle-builder-3.x.x.jar的pom文件中，该pom是项目的superpom。</p>
-<pre><code>&lt;repositories&gt;
-    &lt;repository&gt;
-    &lt;id&gt;central&lt;/id&gt;
-    &lt;name&gt;Central Repository&lt;/name&gt;
-    &lt;url&gt;https://repo.maven.apache.org/maven2&lt;/url&gt;
-    &lt;layout&gt;default&lt;/layout&gt;
-    &lt;snapshots&gt;
-        &lt;enabled&gt;false&lt;/enabled&gt;
-    &lt;/snapshots&gt;
-    &lt;/repository&gt;
-&lt;/repositories&gt;
-</code></pre><h4 id="maven基本命令"><a href="#maven基本命令" class="headerlink" title="maven基本命令"></a>maven基本命令</h4><p>maven的命令跟项目的构建过程相关，完整的构建过程包括<strong>清理</strong>、<strong>编译</strong>、<strong>测试</strong>、<strong>打包</strong>、<strong>集成测试</strong>、<strong>验证</strong>、<strong>部署</strong></p>
-<blockquote>
-<p>清理： <code>mvn clean</code>    删除target目录<br>编译： <code>mvn compile</code>  src/main/java目录的java源码编译成class，放在target目录下<br>测试： <code>mvn test</code><br>打包： <code>mvn package</code>  生成压缩文件jar/war<br>安装： <code>mvn install</code>  将构建物上传到本地仓库<br>部署： <code>mvn deploy</code>   将压缩文件上传到私服</p>
-</blockquote>
-<h2 id="二、maven生命周期与插件"><a href="#二、maven生命周期与插件" class="headerlink" title="二、maven生命周期与插件"></a>二、maven生命周期与插件</h2><p>maven定义了三个生命周期，分别有如下意义：</p>
-<ol>
-<li>clean -清理项目</li>
-<li>default -构建项目</li>
-<li>site -生成项目站点</li>
-</ol>
-<p>maven生命周期，参考：<br><a href="http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Lifecycle_Reference" target="_blank" rel="noopener">http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Lifecycle_Reference</a><br><img src="/images/maven-life-cycle.png" title="maven生命周期"></p>
-<p>maven每个生命周期独立存在，每个生命周期由一个phase list构成，各个phase有依赖关系，后面phase执行时，前面的phase会按顺序依次执行。maven生命周期的各个阶段，包含了项目构建时的真正步骤。</p>
-<ul>
-<li><p><strong>clean生命周期</strong></p>
-<blockquote>
-<p>pre-clean    ：执行清理前的工作；<br>clean    ：清理上一次构建生成的所有文件；<br>post-clean    ：执行清理后的工作</p>
-</blockquote>
-</li>
-<li><p><strong>default生命周期</strong><br>default生命周期是最核心的，它包含了构建项目时真正需要执行的所有步骤。</p>
-<blockquote>
-<p>validate<br>initialize<br>generate-sources<br>process-sources<br>generate-resources<br>process-resources    ：复制和处理资源文件到target目录，准备打包；<br><code>compile</code>    ：编译项目的源代码；<br>process-classes<br>generate-test-sources<br>process-test-sources<br>generate-test-resources<br>process-test-resources<br>test-compile    ：编译测试源代码；<br>process-test-classes<br><code>test</code>    ：运行测试代码；<br>prepare-package<br><code>package</code>    ：打包成jar或者war或者其他格式的分发包；<br>pre-integration-test<br>integration-test<br>post-integration-test<br>verify<br><code>install</code>    ：将打好的包安装到本地仓库，供其他项目使用；<br><code>deploy</code>    ：将打好的包安装到远程仓库，供其他项目使用；</p>
-</blockquote>
-</li>
-<li><p><strong>site生命周期</strong></p>
-<blockquote>
-<p>pre-site<br>site    ：生成项目的站点文档；<br>post-site<br>site-deploy    ：发布生成的站点文档</p>
-</blockquote>
-</li>
-</ul>
-<p>maven生命周期是抽象的，具体工作由maven插件来完成。maven为大部分的phase绑定了默认插件。maven的一个插件可以执行多个目标(goal)，maven的phase最终会绑定在maven plugin的一个目标(goal)上。<br>maven plugins: <a href="https://maven.apache.org/plugins/index.html" target="_blank" rel="noopener">https://maven.apache.org/plugins/index.html</a></p>
-<p>以下是maven在打包war/jar时，依次执行的phase及其绑定的插件goals<br><img src="/images/maven-default-phase-goals.png" title="maven打包阶段默认绑定的plugins"></p>
-<h2 id="三、pom-xml"><a href="#三、pom-xml" class="headerlink" title="三、pom.xml"></a>三、pom.xml</h2><p>pom配置项比较多，关注如下几个配置</p>
-<ul>
-<li><p>profiles<br>profile元素可以为一个特殊的环境定义一个特殊的构建。比如 <code>production profile</code>来运行<code>mvn install</code>，需要在命令行中传人<code>-Pproduction</code>。</p>
-</li>
-<li><p>dependencyManagement<br>dependencyManagement一般定义在父pom，用来统一依赖版本号，其本身的定义并不会引入依赖。子项目引入依赖后不用指定版本号，会统一使用父dependencyManagement的定义。</p>
-</li>
-<li><p>build<br>项目的插件列表</p>
-</li>
-<li><p>modules<br>项目模块聚合</p>
-</li>
-</ul>
-<h2 id="四、-settings-xml"><a href="#四、-settings-xml" class="headerlink" title="四、 settings.xml"></a>四、 settings.xml</h2><p>maven的配置不想只给一个项目使用，可以将配置写在settings文件里，应用于多个项目，分发给多个用户使用。settings.xml可以写入仓库位置、认证信息等。如下对settings.xml主要配置做一说明。</p>
-<ul>
-<li><strong>servers</strong> </li>
-</ul>
-<p>用来下载和部署的仓库是用pom中的repositories和distributionManagement元素来定义的。但是某些配置例如username和password就不应该随着pom.xml来分配了。这种类型的信息应该保存在构建服务器中的settings.xml中。</p>
-<pre><code>&lt;servers&gt;
-    &lt;server&gt;
-        &lt;id&gt;nexus&lt;/id&gt;
-        &lt;username&gt;deploy&lt;/username&gt;
-        &lt;password&gt;deploy&lt;/password&gt;
-    &lt;/server&gt;
-&lt;/servers&gt;
-</code></pre><ul>
-<li><strong>mirrors</strong> </li>
-</ul>
-<p>mirrors是maven的镜像仓库，maven中央仓库在国外，为了提高访问速度，国内建立了一些镜像仓库，如阿里的镜像仓库<a href="http://maven.aliyun.com/nexus/content/groups/public。" target="_blank" rel="noopener">http://maven.aliyun.com/nexus/content/groups/public。</a><br>官方镜像仓库是：</p>
-<blockquote>
-<p><a href="http://repo.maven.apache.org/maven2" target="_blank" rel="noopener">http://repo.maven.apache.org/maven2</a> hosted in the US<br><a href="http://uk.maven.org/maven2" target="_blank" rel="noopener">http://uk.maven.org/maven2</a> hosted in the UK.</p>
-</blockquote>
-<pre><code>&lt;mirrors&gt;
-    &lt;mirror&gt;
-        &lt;id&gt;central&lt;/id&gt;
-        &lt;name&gt;Central Repository&lt;/name&gt;
-        &lt;mirrorOf&gt;*&lt;/mirrorOf&gt;
-        &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;
-    &lt;/mirror&gt;
-&lt;/mirrors&gt;
-</code></pre><p><strong>mirrorOf</strong><br>通过mirrorOf，可以指定那些仓库通过镜像仓库访问，用来获取更快的访问速度，有如下匹配规则：</p>
-<p><code>*</code>:使用一个仓库，所有的构件都从该镜像仓库download。这个仓库需要包含所有的构件，或者会代理到一个仓库group。如果mirrorOf是<code>*</code>，即使配了多个repository，也不会从这些repository中下载构件。 <code>repo,repo1</code> : repo or repo1<br><code>*,!repo1</code> : everything except repo1，意思是repo1还是通过repository配置的仓库去下载，其余都从mirror配置的镜像仓库下载。<br>mirrorOf详解： <a href="http://maven.apache.org/guides/mini/guide-mirror-settings.html" target="_blank" rel="noopener">http://maven.apache.org/guides/mini/guide-mirror-settings.html</a></p>
-<p><strong>proxies</strong><br>代理配置</p>
-<p><strong>profiles</strong><br>settings.xml中的profile是pom.xml中的profile的简洁形式。它包含了激活(activation)，仓库(repositories)，插件仓库(pluginRepositories)和属性(properties)元素 如果settings中的profile被激活，那么它的值将重载POM或者profiles.xml中的任何相等ID的profiles。</p>
-<ul>
-<li><p>repositories<br>仓库是maven构建本地项目的远程仓库集合。当profile被激活，就会在该仓库寻找匹配的构件(jar)。</p>
-</li>
-<li><p>pluginRepositories<br>类似repositories，不过一个是构件仓库，一个是插件仓库。</p>
-</li>
-<li><p>properties<br>Maven的属性是值占位符，如果x是一个属性的话，那么它的值在pom中可以使用${x}来访问。</p>
-</li>
-<li><p>activeProfiles<br>激活对应的profile(根据profile id匹配)。</p>
-</li>
-</ul>
-<p>以上，是settings.xml的介绍，参考如下<br><a href="http://maven.apache.org/settings.html" target="_blank" rel="noopener">http://maven.apache.org/settings.html</a><br><a href="http://maven.apache.org/ref/3.5.3/maven-settings/settings.html" target="_blank" rel="noopener">http://maven.apache.org/settings.html</a></p>
-<h2 id="五、-其他相关"><a href="#五、-其他相关" class="headerlink" title="五、 其他相关"></a>五、 其他相关</h2><p><strong>版本号规范</strong><br>Maven有发布版本（也称正式版本）与非发布版本（也称开发版本）的区别。<br>规范：<code>发布版本由数字、字母、小数点和短横线组成，非发布版本由 -SNAPSHOT 后缀组成</code>。</p>
-<blockquote>
-<p>发布版本示例：1.0.0 1.1.0-RELEASE<br>非发布版本示例：1.0.0-SNAPSHOT Maven</p>
-</blockquote>
-<p>在执行部署时可以自动识别版本规范，将正式版本部署到Releases仓库，非正式版本部署到Snapshots仓库。Releases仓库禁止重复部署相同坐标的Jar包。如果有新的版本要发布，必须升级版本号，否则会收到HTTP 400错误。</p>
-<p>如果已经发布了jar包，现在这个包已经有代码修改，需要再次发布，那么必须升级版本号。可以通过修改 pom.xml 里的 version 节点，或者 maven deploy 命令里的 -Dversion 参数实现版本升级。推荐：使用 maven-release-plugin 插件来管理版本的自动升级。</p>
-<p><strong>maven项目的依赖、继承、组合</strong></p>
-<pre><code>&lt;dependency/&gt;
-&lt;parent/&gt;
-&lt;modules/&gt;
-</code></pre><p><strong>依赖范围</strong></p>
-<pre><code>&lt;dependency&gt;
-        &lt;groupId&gt;javax.servlet&lt;/groupId&gt;
-        &lt;artifactId&gt;servlet-api&lt;/artifactId&gt;
-        &lt;version&gt;2.5&lt;/version&gt;
-        &lt;scope&gt;provided&lt;/scope&gt;
-&lt;/dependency&gt;
-</code></pre><blockquote>
-<p><code>compile</code>:编译依赖，默认的依赖方式，在编译（编译项目和编译测试用例），运行测试用例，运行（项目实际运行）三个阶段都有效，典型有spring-core等jar。<br><code>test</code>:测试依赖，只在编译测试用例和运行测试用例有效，典型地有JUnit。<br><code>provided</code>:对于编译和测试有效，不会打包进发布包中，典型的例子为servlet-api,一般的web工程运行时都使用容器的servlet-api。<br><code>runtime</code>:只在运行测试用例和实际运行时有效，典型地是jdbc驱动jar包。<br><code>system</code>: 不从maven仓库获取该jar,而是通过systemPath指定该jar的路径。<br><code>import</code>: 用于一个dependencyManagement对另一个dependencyManagement的继承。</p>
-</blockquote>
-<p><strong>依赖传递及冲突处理</strong></p>
-<ol>
-<li><p>依赖传递 <code>A-&gt;B</code>，<code>B-&gt;C</code>，则<code>A</code>会自动依赖<code>C</code>。</p>
-</li>
-<li><p>依赖规则</p>
-<blockquote>
-<p>路径长度一致，先定义先引入：<code>A-&gt;B-&gt;X(1.0)</code> <code>A-&gt;D-&gt;X(2.0)</code>=&gt;引入<code>X(1.0)</code><br>最短路径引入：<code>A-&gt;B-&gt;C-&gt;X(1.0)</code> <code>A-&gt;D-&gt;X(2.0)</code>=&gt;引入<code>X(2.0)</code></p>
-</blockquote>
-</li>
-<li><p>依赖冲突处理 排除依赖 <code>A-&gt;B-&gt;C(1.0)</code> 不想使用<code>C(1.0)</code>，可在<code>B</code>中排除<code>C(1.0)</code>，并在<code>A</code>中引入<code>C(2.0)</code></p>
-</li>
-</ol>
-<h2 id="六、-Nexus-私服"><a href="#六、-Nexus-私服" class="headerlink" title="六、 Nexus 私服"></a>六、 Nexus 私服</h2><p>nexus私服作为一种特殊的远程仓库为Maven提供仓库服务，当Maven需要下载构件的时候从私服请求，若私服上不存在，则从外部远程仓库下载，缓存到私服上后，再为maven的下载请求提供服务。<br>此外，一些无法从外部下载的构件也能从本地上传到私服供其他用户使用。构件搜索顺序：<code>本地仓库</code>、<code>私服</code>、<code>中央仓库</code>。<br>Nexus包括多种仓库概念，包括<code>代理仓库（proxy）</code>、<code>宿主仓库（host）</code>、<code>仓库组（group）</code>等，每一种仓库都提供了配置参数供用户定制。<br>目前Nexus支持maven2/npm等私有仓库。Nexus 私服搭建请搜索，简单来说就是下载、启动，然后在web页面做部分配置。</p>
-<h4 id="maven2-构件发布"><a href="#maven2-构件发布" class="headerlink" title="maven2 构件发布"></a>maven2 构件发布</h4><p><strong>1. mvn deploy</strong> </p>
-<blockquote>
-<p>pom文件通过<code>&lt;distributionManagement&gt;</code>指定要deploy的仓库地址<br>settings.xml通过<code>servers&gt;</code>配置仓库认证信息</p>
-</blockquote>
-<p><strong>2. 手工deploy</strong></p>
-<pre><code>mvn deploy:deploy-file 
-        -Dfile=xxx.jar 
-        -DgroupId=&quot;com.huawei.it&quot; 
-        -DartifactId=&quot;legacy&quot; 
-        -Dversion=&quot;1.0&quot; 
-        -Durl=http://xx/nexus/content/repositories/releases/ 
-        -DrepositoryId=&quot;nexus&quot; 
-        --settings ./settings.xml *可选，指定settings*
-</code></pre><h4 id="npm-构建发布"><a href="#npm-构建发布" class="headerlink" title="npm 构建发布"></a>npm 构建发布</h4><ol>
-<li><p>新建deploy.txt，存入nexus用户名/密码</p>
-</li>
-<li><p>cmd执行如下命令加密 certutil -encode deploy.txt deploy1.txt<br>得到类似<code>ZGVwbG95OmRlcGxveQ==</code>的字符串</p>
-</li>
-<li><p>.npmrc配置</p>
-<pre><code>registry=&quot;http://10.10.10.10/repository/npm_repo/&quot;
-init.author.name=jack
-init.author.email=jack.gmail.com
-init.author.email=jack.com
-email=jack.gmail.com
-always-auth=true
-_auth=ZGVwbG95OmRlcGxveQ
-</code></pre></li>
-<li><p>npm publish<br>参考：<a href="https://books.sonatype.com/nexus-book/2.13/reference/npm-deploying-packages.html" target="_blank" rel="noopener">https://books.sonatype.com/nexus-book/2.13/reference/npm-deploying-packages.html</a></p>
-</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/06/2018-5-6 Maven/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1972,7 +1903,7 @@ _auth=ZGVwbG95OmRlcGxveQ
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

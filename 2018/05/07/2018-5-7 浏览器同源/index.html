@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="还没想好">
 <meta property="og:description" content="一. 浏览器同源策略same originTwo URLs are said to have the “same origin” if they have the same protocol, domain and port.The “Same Origin” (same site) policy limits access of windows and frame to each other.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-07T13:00:26.373Z">
+<meta property="og:updated_time" content="2018-06-07T15:49:12.458Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浏览器同源策略及跨域通信">
 <meta name="twitter:description" content="一. 浏览器同源策略same originTwo URLs are said to have the “same origin” if they have the same protocol, domain and port.The “Same Origin” (same site) policy limits access of windows and frame to each other.">
@@ -375,7 +375,8 @@
         <h2 id="一-浏览器同源策略"><a href="#一-浏览器同源策略" class="headerlink" title="一. 浏览器同源策略"></a>一. 浏览器同源策略</h2><h4 id="same-origin"><a href="#same-origin" class="headerlink" title="same origin"></a>same origin</h4><p>Two URLs are said to have the “same origin” if they have the same <code>protocol</code>, <code>domain</code> and <code>port</code>.The “Same Origin” (same site) policy limits access of windows and frame to each other.</p>
 <p>如果两个<code>window</code>的一级域名相同，如 <code>site.com</code>, <code>app.site.com</code>, <code>weapp.site.com</code>，可以通过设置所有窗口的<code>document.domain</code>，来认为这些域名是同源的。</p>
 <pre><code>document.domain = &apos;site.com&apos;;
-</code></pre><h4 id="same-origin-policy-limitations"><a href="#same-origin-policy-limitations" class="headerlink" title="same origin policy limitations"></a>same origin policy limitations</h4><ul>
+</code></pre><a id="more"></a>
+<h4 id="same-origin-policy-limitations"><a href="#same-origin-policy-limitations" class="headerlink" title="same origin policy limitations"></a>same origin policy limitations</h4><ul>
 <li><code>Cookie</code>、<code>LocalStorage</code>、<code>IndexDB</code> 无法读取</li>
 <li><code>DOM</code>无法获得</li>
 <li><code>AJAX</code>请求不能发送</li>
@@ -516,6 +517,10 @@ function foo(data) {
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/06/07/2018-6-7 JWT/" rel="prev" title="JWT">
+                JWT <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -600,7 +605,7 @@ function foo(data) {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
