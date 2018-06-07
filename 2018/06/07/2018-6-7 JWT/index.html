@@ -89,7 +89,7 @@
 <meta property="og:image" content="http://dengzhe.xyz/images/jwt.jpg">
 <meta property="og:image" content="http://dengzhe.xyz/images/微服务网关鉴权.png">
 <meta property="og:image" content="http://dengzhe.xyz/images/用户鉴权.png">
-<meta property="og:updated_time" content="2018-06-07T15:48:44.951Z">
+<meta property="og:updated_time" content="2018-06-07T15:54:12.316Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JWT">
 <meta name="twitter:description" content="一. JWTJSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties. JWT是一个标准，用来两方之间安全传输数据。JWT传输的数据其实就是Json web token字符串。所以广义上，JWT是一个标准的名称；狭义上，JWT">
@@ -378,7 +378,7 @@
         <h2 id="一-JWT"><a href="#一-JWT" class="headerlink" title="一. JWT"></a>一. JWT</h2><p><code>JSON Web Tokens</code> are an open, industry standard <code>RFC 7519</code> method for representing claims securely between two parties.</p>
 <p><code>JWT</code>是一个标准，用来两方之间安全传输数据。<code>JWT</code>传输的数据其实就是<code>Json web token</code>字符串。所以广义上，<code>JWT</code>是一个标准的名称；狭义上，<code>JWT</code>指的就是用来传递的那个token字符串。这个串有两个特点： </p>
 <blockquote>
-<p>紧凑：指的是这个串很小，能通过url 参数，http 请求体以及http header的方式来传递；<br>自包含：这个串可以包含很多信息，比如用户的id、角色等，别人拿到这个串，就能拿到这些关键的业务信息。</p>
+<p>紧凑：<code>JWT</code>字符串很小，能通过http请求参数、请求体以及http header的方式来传递；<br>自包含：<code>JWT</code>字符串可包含很多信息，如用户的<code>ID</code>、<code>角色</code>等，拿到该串，即可得到这些信息。</p>
 </blockquote>
 <a id="more"></a>
 <h2 id="二-JWT数据结构、签发、验证"><a href="#二-JWT数据结构、签发、验证" class="headerlink" title="二. JWT数据结构、签发、验证"></a>二. JWT数据结构、签发、验证</h2><h4 id="2-1-JWT-数据结构及签发"><a href="#2-1-JWT-数据结构及签发" class="headerlink" title="2.1 JWT 数据结构及签发"></a>2.1 JWT 数据结构及签发</h4><p>一个JWT三部分组成：<code>header</code>（头部）、<code>payload</code>（载荷）和<code>signature</code>（签名）。这三个部分在JWT里面分别对应英文句号分隔出来的三个串。如下图：</p>
