@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="iframe,浏览器同源," />
+  <meta name="keywords" content="markdown," />
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="一. 浏览器同源策略same originTwo URLs are said to have the “same origin” if they have the same protocol, domain and port.The “Same Origin” (same site) policy limits access of windows and frame to each other.">
-<meta name="keywords" content="iframe,浏览器同源">
+<meta name="description" content="Why Markdown 易读，易写，纯文本，极简主义 兼容HTML 跨平台 优雅">
+<meta name="keywords" content="markdown">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浏览器同源策略及跨域通信">
-<meta property="og:url" content="http://dengzhe.xyz/2018/05/07/2018-5-7 浏览器同源/index.html">
+<meta property="og:title" content="Markdown语法简记">
+<meta property="og:url" content="http://dengzhe.xyz/2018/03/27/Markdown简记/index.html">
 <meta property="og:site_name" content="还没想好">
-<meta property="og:description" content="一. 浏览器同源策略same originTwo URLs are said to have the “same origin” if they have the same protocol, domain and port.The “Same Origin” (same site) policy limits access of windows and frame to each other.">
+<meta property="og:description" content="Why Markdown 易读，易写，纯文本，极简主义 兼容HTML 跨平台 优雅">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-07T15:49:12.458Z">
+<meta property="og:image" content="https://dengzhe.xyz/images/樱园.jpg">
+<meta property="og:updated_time" content="2018-05-06T16:44:50.632Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浏览器同源策略及跨域通信">
-<meta name="twitter:description" content="一. 浏览器同源策略same originTwo URLs are said to have the “same origin” if they have the same protocol, domain and port.The “Same Origin” (same site) policy limits access of windows and frame to each other.">
+<meta name="twitter:title" content="Markdown语法简记">
+<meta name="twitter:description" content="Why Markdown 易读，易写，纯文本，极简主义 兼容HTML 跨平台 优雅">
+<meta name="twitter:image" content="https://dengzhe.xyz/images/樱园.jpg">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://dengzhe.xyz/2018/05/07/2018-5-7 浏览器同源/"/>
+  <link rel="canonical" href="http://dengzhe.xyz/2018/03/27/Markdown简记/"/>
 
 
 
 
 
-  <title>浏览器同源策略及跨域通信 | 还没想好</title>
+  <title>Markdown语法简记 | 还没想好</title>
   
 
 
@@ -271,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/05/07/2018-5-7 浏览器同源/">
+    <link itemprop="mainEntityOfPage" href="http://dengzhe.xyz/2018/03/27/Markdown简记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="烂笔头">
@@ -288,7 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">浏览器同源策略及跨域通信</h1>
+          <h1 class="post-title" itemprop="name headline">Markdown语法简记</h1>
         
 
         <div class="post-meta">
@@ -300,8 +302,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-07T19:20:33+08:00">
-                2018-05-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-27T22:27:13+08:00">
+                2018-03-27
               </time>
             
 
@@ -323,8 +325,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Front-End/" itemprop="url" rel="index">
-                    <span itemprop="name">Front-End</span>
+                  <a href="/categories/语言/" itemprop="url" rel="index">
+                    <span itemprop="name">语言</span>
                   </a>
                 </span>
 
@@ -342,8 +344,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/05/07/2018-5-7 浏览器同源/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="2018/05/07/2018-5-7 浏览器同源/" itemprop="commentsCount"></span>
+                <a href="/2018/03/27/Markdown简记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/03/27/Markdown简记/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -372,85 +374,55 @@
       
 
       
-        <h2 id="一-浏览器同源策略"><a href="#一-浏览器同源策略" class="headerlink" title="一. 浏览器同源策略"></a>一. 浏览器同源策略</h2><h4 id="same-origin"><a href="#same-origin" class="headerlink" title="same origin"></a>same origin</h4><p>Two URLs are said to have the “same origin” if they have the same <code>protocol</code>, <code>domain</code> and <code>port</code>.The “Same Origin” (same site) policy limits access of windows and frame to each other.</p>
-<p>如果两个<code>window</code>的一级域名相同，如 <code>site.com</code>, <code>app.site.com</code>, <code>weapp.site.com</code>，可以通过设置所有窗口的<code>document.domain</code>，来认为这些域名是同源的。</p>
-<pre><code>document.domain = &apos;site.com&apos;;
-</code></pre><a id="more"></a>
-<h4 id="same-origin-policy-limitations"><a href="#same-origin-policy-limitations" class="headerlink" title="same origin policy limitations"></a>same origin policy limitations</h4><ul>
-<li><code>Cookie</code>、<code>LocalStorage</code>、<code>IndexDB</code> 无法读取</li>
-<li><code>DOM</code>无法获得</li>
-<li><code>AJAX</code>请求不能发送</li>
+        <h2 id="Why-Markdown"><a href="#Why-Markdown" class="headerlink" title="Why Markdown"></a>Why Markdown</h2><ul>
+<li>易读，易写，纯文本，极简主义</li>
+<li>兼容HTML</li>
+<li>跨平台</li>
+<li>优雅</li>
 </ul>
-<h2 id="二-iframe-cross-window-messaging"><a href="#二-iframe-cross-window-messaging" class="headerlink" title="二. iframe cross-window messaging"></a>二. iframe cross-window messaging</h2><p>对<code>iframe</code>来说，如果窗口不同源，各<code>window</code>之间一般通过<code>window.postMessage</code>进行消息传递。当然，同源窗口也可以通过该接口进行通信。如下是获取iframe窗口的方法：</p>
+<a id="more"></a>
+<h2 id="How-to-write"><a href="#How-to-write" class="headerlink" title="How to write"></a>How to write</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h3><p>两种形式：</p>
+<p>1.1 使用====和—-标记一二级标题</p>
 <blockquote>
-<p> <code>window.frames</code> – a collection of nested window objects,<br> <code>window.parent</code>, <code>window.top</code> are the references to parent and top windows,<br> <code>iframe.contentWindow</code> is the window inside an <code>&lt;iframe&gt;</code> tag.</p>
-</blockquote>
-<p>如果窗口间是不同源的，只能进行如下动作：</p>
-<ul>
-<li>Change the location of another window (write-only access).</li>
-<li><p>Post a message(<code>window.postMessage</code>) to it.</p>
-</li>
-<li><h4 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h4><p>The window that wants to send a message calls postMessage method of the receiving window. In other words, if we want to send the message to win, we should call <code>win</code>.postMessage(<code>data</code>, <code>targetOrigin</code>).</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
+<p>1.2 使用#，标记1-6级标题。</p>
 <blockquote>
-<p><code>**win**</code> 目标窗口<br><code>**data**</code> 发送数据<br><code>**targetOrigin**</code> 目标origin(协议 + 域名 + 端口)；也可为<code>*</code>，表示不限制域名。</p>
-</blockquote>
-<p>  <strong><code>Specifying targetOrigin ensures that the window only receives the data if it’s still at that site. Good when the data is sensitive.</code></strong></p>
-<p>  For instance, here win will only receive the message if it has a document from the origin <a href="http://example.com" target="_blank" rel="noopener">http://example.com</a>:</p>
-<pre><code>&lt;iframe src=&quot;http://example.com&quot; name=&quot;example&quot;&gt;
-
-&lt;script&gt;
-    let win = window.frames.example;
-    win.postMessage(&quot;message&quot;, &quot;http://example.com&quot;);
-&lt;/script&gt;
-</code></pre></li>
-<li><h4 id="onmessage"><a href="#onmessage" class="headerlink" title="onmessage"></a>onmessage</h4><p>  To receive a message, the target window should have a handler on the message event. It triggers when postMessage is called (and targetOrigin check is successful). To assign that handler, we should use <code>addEventListener</code>, a short syntax <code>window.onmessage</code> does not work.</p>
-<pre><code>window.addEventListener(&quot;message&quot;, function(event) {
-if (event.origin != &apos;http://javascript.info&apos;) { 
-    event.source.postMessage(&apos;&apos;,&apos;http://sub.javascript.info&apos;);
-}
-alert( &quot;received: &quot; + event.data );
-});
-</code></pre><p>  The <code>event object</code> has special properties:</p>
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
+<h3 id="2-段落"><a href="#2-段落" class="headerlink" title="2. 段落"></a>2. 段落</h3><p>2.1 前后有空行<br>2.2 段内强制换行-&gt; 两个以上空格+回车</p>
+<h3 id="3-区块引用"><a href="#3-区块引用" class="headerlink" title="3. 区块引用"></a>3. 区块引用</h3><p>使用符号&gt;</p>
 <blockquote>
-<p><strong><code>data</code></strong> The data from postMessage.<br><strong><code>origin</code></strong> The origin of the sender, for instance <a href="http://javascript.info" target="_blank" rel="noopener">http://javascript.info</a>.<br><strong><code>source</code></strong> The reference to the sender window. <strong><code>We can immediately postMessage back if we want</code></strong>.</p>
+<p>区块引用</p>
+<blockquote>
+<p>嵌套引用</p>
 </blockquote>
-<p>  <em>There’s totally no delay between postMessage and the message event. That happens synchronously, even faster than setTimeout(…,0).</em></p>
-</li>
-</ul>
-<h2 id="三-跨域通信-JSONP-amp-CORS"><a href="#三-跨域通信-JSONP-amp-CORS" class="headerlink" title="三. 跨域通信 JSONP &amp; CORS"></a>三. 跨域通信 JSONP &amp; CORS</h2><h4 id="JsonP"><a href="#JsonP" class="headerlink" title="JsonP"></a>JsonP</h4><p><code>JSONP</code>是服务器与客户端跨源通信的常用方法。它的基本思想是，网页通过添加一个<code>&lt;script&gt;</code>元素，向服务器请求JSON数据，这种做法不受同源政策限制；服务器收到请求后，将数据放在一个指定名字的回调函数里传回来。<code>JsonP</code>只支持<code>GET</code>请求。</p>
-<pre><code>function addScriptTag(src) {
-    var script = document.createElement(&apos;script&apos;);
-    script.setAttribute(&quot;type&quot;,&quot;text/javascript&quot;);
-    script.src = src;
-    document.body.appendChild(script);
-}
-// 跨域调用，指定回调方法名
-window.onload = function () {
-    addScriptTag(&apos;http://example.com/ip?callback=foo&apos;); 
-}
-// 返回结果
-function foo(data) {
-    console.log(&apos;Your public IP address is: &apos; + data.ip);
-};
-</code></pre><h5 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h5><p><code>CORS</code>是一个<code>W3C</code>标准，全称是”跨域资源共享”（Cross-origin resource sharing）。它允许浏览器向跨源服务器，发出<code>XMLHttpRequest</code>请求，从而克服了<code>AJAX</code>只能同源使用的限制。</p>
-<p><code>CORS</code>需要浏览器和服务器同时支持。目前，所有浏览器都支持该功能。整个<code>CORS</code>通信过程，都是浏览器自动完成，不需要用户参与。对于开发者来说，<code>CORS</code>通信与同源的<code>AJAX</code>通信没有差别，代码完全一样。浏览器一旦发现<code>AJAX</code>请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。</p>
-<p>实现<code>CORS</code>通信的关键是服务器。只要服务器实现了<code>CORS</code>接口，就可以跨源通信。在Java Web中，服务器通过实现<code>Filter</code>支持CORS。</p>
-<pre><code>public class CORSFilter implements Filter {
-
-    @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws IOException, ServletException {
-        HttpServletResponse response = (HttpServletResponse)response;
-        // 允许跨域访问的origin domain
-        response.setHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
-        response.setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;POST, GET, OPTIONS, DELETE&quot;);
-        response.setHeader(&quot;Access-Control-Max-Age&quot;, &quot;3600&quot;);
-        response.setHeader(&quot;Access-Control-Allow-Headers&quot;, &quot;x-requested-with&quot;);
-        chain.doFilter(request, response);
-    }
-}
-</code></pre><hr>
-<p>Reference:<br><a href="http://javascript.info/cross-window-communication" target="_blank" rel="noopener">Cross-window communication</a><br><a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target="_blank" rel="noopener">浏览器同源政策及其规避方法</a><br><a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target="_blank" rel="noopener">跨域资源共享 CORS 详解</a></p>
+</blockquote>
+<h3 id="4-代码区块"><a href="#4-代码区块" class="headerlink" title="4. 代码区块"></a>4. 代码区块</h3><p>每行四个空格或者一个Tab</p>
+<pre><code>console.log(&quot;this is code area&quot;)
+</code></pre><h3 id="5-强调"><a href="#5-强调" class="headerlink" title="5. 强调"></a>5. 强调</h3><p>强调内容两侧加上*或者_，*或_表示斜体，**或__表示粗体。  </p>
+<blockquote>
+<p><em>斜体</em>，_斜体_<br><strong>粗体</strong>，<strong>粗体</strong></p>
+</blockquote>
+<h3 id="6-列表"><a href="#6-列表" class="headerlink" title="6. 列表"></a>6. 列表</h3><blockquote>
+<p>+、- 标记无序列表<br>数字+.标记有序列表</p>
+</blockquote>
+<p>+无序列表<br>-无序列表</p>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<h3 id="7-分隔线"><a href="#7-分隔线" class="headerlink" title="7. 分隔线"></a>7. 分隔线</h3><p>三个以上 - 或者 _ 或者 *</p>
+<hr>
+<h3 id="8-链接"><a href="#8-链接" class="headerlink" title="8. 链接"></a>8. 链接</h3><p>[链接](地址 “鼠标悬浮文字”)</p>
+<blockquote>
+<p><a href="https://dengzhe.xyz" title="我的链接">我的链接</a></p>
+</blockquote>
+<h3 id="9-图片"><a href="#9-图片" class="headerlink" title="9. 图片"></a>9. 图片</h3><p>![链接](地址 “鼠标悬浮文字”)<br><img src="https://dengzhe.xyz/images/樱园.jpg" alt="图片" title="樱园"></p>
+<h3 id="10-符号’-’"><a href="#10-符号’-’" class="headerlink" title="10. 符号’`’"></a>10. 符号’`’</h3><p>标记作用  </p>
+<blockquote>
+<p><code>small code area</code></p>
+</blockquote>
+<h3 id="11-反斜杠"><a href="#11-反斜杠" class="headerlink" title="11. 反斜杠\"></a>11. 反斜杠\</h3><p>相当于转义</p>
+<p>>转义区块引用附’&gt;’</p>
 
       
     </div>
@@ -492,9 +464,7 @@ function foo(data) {
       
         <div class="post-tags">
           
-            <a href="/tags/iframe/" rel="tag"># iframe</a>
-          
-            <a href="/tags/浏览器同源/" rel="tag"># 浏览器同源</a>
+            <a href="/tags/markdown/" rel="tag"># markdown</a>
           
         </div>
       
@@ -507,8 +477,8 @@ function foo(data) {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/06/2018-5-6 Maven/" rel="next" title="Maven 简单入门">
-                <i class="fa fa-chevron-left"></i> Maven 简单入门
+              <a href="/2018/03/24/三月的尾巴/" rel="next" title="三月快到尾巴">
+                <i class="fa fa-chevron-left"></i> 三月快到尾巴
               </a>
             
           </div>
@@ -517,8 +487,8 @@ function foo(data) {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/07/2018-6-7 JWT/" rel="prev" title="JSON Web Tokens">
-                JSON Web Tokens <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/05/2018-04-05清明/" rel="prev" title="清明时间雨纷纷">
+                清明时间雨纷纷 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -660,7 +630,7 @@ function foo(data) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-浏览器同源策略"><span class="nav-number">1.</span> <span class="nav-text">一. 浏览器同源策略</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#same-origin"><span class="nav-number">1.0.1.</span> <span class="nav-text">same origin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#same-origin-policy-limitations"><span class="nav-number">1.0.2.</span> <span class="nav-text">same origin policy limitations</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-iframe-cross-window-messaging"><span class="nav-number">2.</span> <span class="nav-text">二. iframe cross-window messaging</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#postMessage"><span class="nav-number">2.0.1.</span> <span class="nav-text">postMessage</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#onmessage"><span class="nav-number">2.0.2.</span> <span class="nav-text">onmessage</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-跨域通信-JSONP-amp-CORS"><span class="nav-number">3.</span> <span class="nav-text">三. 跨域通信 JSONP &amp; CORS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#JsonP"><span class="nav-number">3.0.1.</span> <span class="nav-text">JsonP</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#CORS"><span class="nav-number">3.0.1.1.</span> <span class="nav-text">CORS</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-Markdown"><span class="nav-number">1.</span> <span class="nav-text">Why Markdown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-write"><span class="nav-number">2.</span> <span class="nav-text">How to write</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-标题"><span class="nav-number">2.1.</span> <span class="nav-text">1. 标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题-1"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题-1"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-段落"><span class="nav-number">1.2.</span> <span class="nav-text">2. 段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-区块引用"><span class="nav-number">1.3.</span> <span class="nav-text">3. 区块引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-代码区块"><span class="nav-number">1.4.</span> <span class="nav-text">4. 代码区块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-强调"><span class="nav-number">1.5.</span> <span class="nav-text">5. 强调</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-列表"><span class="nav-number">1.6.</span> <span class="nav-text">6. 列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-分隔线"><span class="nav-number">1.7.</span> <span class="nav-text">7. 分隔线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-链接"><span class="nav-number">1.8.</span> <span class="nav-text">8. 链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-图片"><span class="nav-number">1.9.</span> <span class="nav-text">9. 图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-符号’-’"><span class="nav-number">1.10.</span> <span class="nav-text">10. 符号’`’</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-反斜杠"><span class="nav-number">1.11.</span> <span class="nav-text">11. 反斜杠\</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -841,7 +811,7 @@ function foo(data) {
 		_hcwp.push({widget:"Bloggerstream", widget_id: 102996, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/05/07/2018-5-7 浏览器同源/"});
+		_hcwp.push({widget:"Stream", widget_id: 102996, xid: "2018/03/27/Markdown简记/"});
 		
 
 		(function() {
